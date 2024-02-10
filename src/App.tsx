@@ -1,12 +1,12 @@
-import './App.scss'
+import "./App.scss";
+import MobileNavBar from "./components/MobileNavBar/MobileNavBar";
 
 function App() {
-
   return (
     <>
-      <h1>start</h1>
+      <MobileNavBar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
