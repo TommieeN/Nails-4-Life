@@ -2,7 +2,5 @@
 @use "../../styles/partials/mixins" as *;
 
 .navbar {
-    @include desktop {
-        color: red;
-    }
+    
 }
