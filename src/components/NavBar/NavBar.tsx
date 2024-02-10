@@ -26,16 +26,14 @@ const NavBar = () => {
     };
   }, []);
 
-  const handleHamburgerClick = (event: React.MouseEvent<HTMLDivElement>) => {
+  const handleHamburgerClick = (
+    event: React.MouseEvent<HTMLUListElement, MouseEvent>
+  ) => {
     event.stopPropagation();
     setDropdownOpen(!isDropdownOpen);
   };
 
-  const handleDropdownClick = (event: React.MouseEvent<HTMLUListElement>) => {
-    event.stopPropagation();
-  };
-
-  // Framer Motion Properties
+  // MotionFramer Properties
   const itemVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 }
@@ -49,18 +47,16 @@ const NavBar = () => {
           src={logo}
           alt="Logo"
         />
-        <div onClick={handleHamburgerClick}>
-          {isDropdownOpen ? <IoCloseOutline size={38} /> : <RxHamburgerMenu />}
-        </div>
+        {isDropdownOpen ? <IoCloseOutline size={38} /> : <RxHamburgerMenu />}
       </div>
       <AnimatePresence>
         {isDropdownOpen && (
           <motion.ul
             className="navbar-list"
+            onClick={handleHamburgerClick}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={handleDropdownClick}
           >
             {["Home", "Booking", "Services", "About Us"].map((item, index) => (
               <motion.li
