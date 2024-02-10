@@ -27,7 +27,7 @@ const NavBar = () => {
   }, []);
 
   const handleHamburgerClick = (
-    event: React.MouseEvent<HTMLUListElement, MouseEvent>
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     event.stopPropagation();
     setDropdownOpen(!isDropdownOpen);
@@ -36,24 +36,22 @@ const NavBar = () => {
   // MotionFramer Properties
   const itemVariants = {
     hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
     <nav className="navbar" ref={navbarRef}>
       <div className="navbar-container">
-        <img
-          className="navbar-container__logo"
-          src={logo}
-          alt="Logo"
-        />
-        {isDropdownOpen ? <IoCloseOutline size={38} /> : <RxHamburgerMenu />}
+        <img className="navbar-container__logo" src={logo} alt="Logo" />
+        <div onClick={handleHamburgerClick}>
+          {isDropdownOpen ? <IoCloseOutline size={38} /> : <RxHamburgerMenu />}
+        </div>
       </div>
       <AnimatePresence>
         {isDropdownOpen && (
           <motion.ul
             className="navbar-list"
-            onClick={handleHamburgerClick}
+            // onClick={handleHamburgerClick}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
