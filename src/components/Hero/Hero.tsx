@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import hero from "../../assets/hero-nail-img.jpg";
+import hero from "../../assets/nail-assets/hero-nail-img.jpg";
 const Hero = () => {
   return (
     <section className="hero">
