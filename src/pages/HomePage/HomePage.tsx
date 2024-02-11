@@ -1,10 +1,11 @@
+import Hero from "../../components/Hero/Hero";
 import "./HomePage.scss";
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>home page</h1>
-    </div>
+    <main>
+      <Hero />
+    </main>
   )
 }
 
