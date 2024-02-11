@@ -10,7 +10,7 @@ const Hero = () => {
       />
       <h1 className="hero-header">Nails 4 Life</h1>
       <div className="hero-text">
-        <p>Elevate Your Style</p>
+        <p>Elevate Your Style,</p>
         <p>Enhance Your Beauty</p>
       </div>
       <div className="hero-button">

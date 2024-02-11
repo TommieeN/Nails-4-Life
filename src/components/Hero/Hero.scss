@@ -3,18 +3,24 @@
 @use "../../styles/partials/mixins" as *;
 
 .hero {
-
+  height: 90vh;
   &-banner {
     width: 100%;
+    height: 53vh;
+    object-fit: cover;
+
   }
 
   &-header {
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     font-size: 2.5rem;
   }
 
   &-text {
-    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
     color: #888888;
   }
 
