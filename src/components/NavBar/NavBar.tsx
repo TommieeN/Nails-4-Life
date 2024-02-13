@@ -51,7 +51,6 @@ const NavBar = () => {
         {isDropdownOpen && (
           <motion.ul
             className="navbar-list"
-            // onClick={handleHamburgerClick}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
