@@ -65,7 +65,7 @@ const NavBar = () => {
                 animate="visible"
                 transition={{ delay: index * 0.2 + 0.2 }}
               >
-                {item}
+                <p className="navbar-list__item">{item}</p>
               </motion.li>
             ))}
           </motion.ul>
