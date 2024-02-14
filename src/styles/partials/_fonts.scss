@@ -8,6 +8,14 @@
 
 @font-face {
     font-family: "InterTight";
+    src: url("../../assets/font/InterTight-SemiBold.woff2") format("woff2");
+    src: url("../../assets/font/InterTight-SemiBold.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "InterTight";
     src: url("../../assets/font/InterTight-Bold.woff2") format("woff2");
     src: url("../../assets/font/InterTight-Bold.woff") format("woff");
     font-weight: 500;

@@ -11,7 +11,6 @@ const SPRING_OPTIONS = {
 };
 
 const DRAG_BUFFER = 50;
-
 const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 5;
 
@@ -30,8 +29,9 @@ const ImageCarousel = () => {
     }
   };
 
-// logic to rotate through the carousel images automatically
   useEffect(() => {
+
+    // logic to rotate through the carousel images automatically
     const intervalRef = setInterval(() => {
       const x = dragX.get();
 

@@ -10,6 +10,8 @@ const NavBar = () => {
   const navbarRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+
+    // function to close navbar when clicked outside of the contents (mobile navbar)
     const handleClickOutside = (event: MouseEvent) => {
       if (
         navbarRef.current &&
