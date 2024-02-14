@@ -1,3 +1,10 @@
-.testemonial__image {
-    width: 100%;
+.testemonial-container {
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        align-items: center;
+        justify-content: center;
+    }
 }
