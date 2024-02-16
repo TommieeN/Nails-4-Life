@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__trademark">
-        <p className="footer__trademark-text">© 2023 ALOE NAILS</p>
+        <p className="footer__trademark-text">© 2023 Nails 4 Life</p>
         <p className="footer__trademark-text">Made with ♡ by Tommy</p>
       </div>
     </footer>

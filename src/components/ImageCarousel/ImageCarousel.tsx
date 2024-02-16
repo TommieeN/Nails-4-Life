@@ -18,7 +18,7 @@ const ImageCarousel = () => {
   const [imgIndex, setImgIndex] = useState(0);
   const dragX = useMotionValue(0);
 
-//  drag logic for carousel
+//  drag function for carousel
   const onDragEnd = () => {
     const x = dragX.get();
 
@@ -31,7 +31,7 @@ const ImageCarousel = () => {
 
   useEffect(() => {
 
-    // logic to rotate through the carousel images automatically
+    // function to rotate through the carousel images automatically
     const intervalRef = setInterval(() => {
       const x = dragX.get();
 
@@ -73,7 +73,7 @@ const ImageCarousel = () => {
               src={imgSrc}
               className="carousel-container__image"
               animate={{
-                scale: imgIndex === index ? 0.95 : 0.85,
+                scale: imgIndex === index ? 1 : 0.85,
               }}
               transition={SPRING_OPTIONS}
             />
