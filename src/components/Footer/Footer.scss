@@ -8,22 +8,6 @@
     padding: 1rem 0;
     background-color: rgb(12, 12, 12);
 
-    &__heading {
-        padding: 0.5rem 0;
-        font-weight: 400;
-        color: white;
-    }
-    &__socials-container {
-        display: flex;
-        flex-direction: column;
-    }
-    &__socials {
-        display: flex;
-        gap: 1rem;
-    }
-    &__text {
-        font-size: 0.85rem;
-    }
     &__trademark {
         padding-top: 1rem;
     }

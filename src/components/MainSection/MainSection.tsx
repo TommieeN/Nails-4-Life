@@ -15,9 +15,9 @@ const MainSection = () => {
           <p className="main-container__text">
             Indulge in the ultimate nail care experience at Nails 4 Life. Our
             skilled technicians offer a range of services including manicures,
-            pedicures, and nail enhancements. Relax in our comfortable
+            pedicures, and nail designs. Relax in our comfortable
             environment and treat yourself to beautiful nails that make a
-            statement. Book your appointment today!
+            statement. Book your appointment today or call us!
           </p>
           <button className="main-container__button">Learn More</button>
         </div>

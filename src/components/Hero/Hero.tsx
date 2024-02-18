@@ -1,5 +1,6 @@
 import "./Hero.scss";
 import hero from "../../assets/nail-assets/hero-nail-img.jpg";
+import { IoLocationOutline } from "react-icons/io5";
 const Hero = () => {
   return (
     <section className="hero" id="Home">

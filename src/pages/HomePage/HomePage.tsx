@@ -1,3 +1,4 @@
+import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import Hero from "../../components/Hero/Hero";
 import MainSection from "../../components/MainSection/MainSection";
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Hero />
       <MainSection />
       <Testemonials />
+      <Contact />
       <Footer />
     </main>
   )
