@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
 import logo from "../../assets/logos/logo2.svg";
 import "./NavBar.scss";
 
@@ -10,7 +11,6 @@ const NavBar = () => {
   const navbarRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-
     // function to close navbar when clicked outside of the contents (mobile navbar)
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -35,6 +35,10 @@ const NavBar = () => {
     setDropdownOpen(!isDropdownOpen);
   };
 
+  const handleLinkClick = () => {
+    setDropdownOpen(false);
+  };
+
   // MotionFramer Properties
   const itemVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -57,7 +61,7 @@ const NavBar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {["Home", "Booking", "Services", "About Us"].map((item, index) => (
+            {["Home", "About Us", "Gallery", "Booking"].map((item, index) => (
               <motion.li
                 key={item}
                 variants={itemVariants}
@@ -65,7 +69,17 @@ const NavBar = () => {
                 animate="visible"
                 transition={{ delay: index * 0.2 + 0.2 }}
               >
-                <p className="navbar-list__item">{item}</p>
+                <Link
+                  to={item}
+                  spy={true}
+                  smooth={true}
+                  hashSpy={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={handleLinkClick}
+                >
+                  <p className="navbar-list__item">{item}</p>
+                </Link>
               </motion.li>
             ))}
           </motion.ul>

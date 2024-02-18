@@ -76,6 +76,7 @@ const ImageCarousel = () => {
                 scale: imgIndex === index ? 1 : 0.85,
               }}
               transition={SPRING_OPTIONS}
+              id="Gallery"
             />
           );
         })}

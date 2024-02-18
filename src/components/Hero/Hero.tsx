@@ -2,7 +2,7 @@ import "./Hero.scss";
 import hero from "../../assets/nail-assets/hero-nail-img.jpg";
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="Home">
       <img
         className="hero-banner"
         src={hero}

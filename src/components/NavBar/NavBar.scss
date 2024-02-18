@@ -2,9 +2,14 @@
 @use "../../styles/partials/mixins" as *;
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
   font-size: 2rem;
   font-weight: 400;
   padding: 1rem 2rem;
+  z-index: 2;
   &-container {
     display: flex;
     align-items: center;

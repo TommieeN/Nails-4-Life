@@ -4,7 +4,7 @@ import WaxImage from "../../assets/nail-assets/wax-image.jpeg";
 const MainSection = () => {
   return (
     <>
-      <section className="main">
+      <section className="main" id="About Us">
         <img
           className="main-image"
           src={NailImage}
