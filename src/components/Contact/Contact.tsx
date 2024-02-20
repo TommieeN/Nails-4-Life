@@ -16,13 +16,15 @@ const Contact = () => {
             15325 56 Ave #104, Surrey, BC
           </a>
         </p>
+        <p className="contact__button">
         <a
-          className="contact__button"
+          
           target="_blank"
           href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8"
         >
           Directions
         </a>
+        </p>
       </div>
         <div>
           <h4 className="contact__heading">Business Hours</h4>
@@ -41,9 +43,9 @@ const Contact = () => {
           <BsTelephone /> Telephone:{" "}
           <a href="tel: +16043723800">(604) 372-3800</a>
         </p>
-        <button className="contact__button-button">
+        <p className="contact__button">
           <a href="tel: +16043723800">Call Now</a>
-        </button>
+        </p>
       </div>
       <div className="contact__socials-container">
         <h4 className="contact__heading">SOCIALS</h4>

@@ -22,12 +22,13 @@
         width: 10%;
     }
     &__button {
-        border: 2px solid;
+        border-radius: 14px;
+        background-color: #EFEFEF;
         margin-top: 0.5rem;
+        padding: 0.5rem;
         font-weight: 400;
-        &-button {
-            @include button;
-        }
+        font-size: 0.9rem;
+        width: fit-content;
     }
 
     &__hours {
