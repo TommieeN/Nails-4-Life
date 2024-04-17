@@ -19,7 +19,6 @@ const MainSection = () => {
             environment and treat yourself to beautiful nails that make a
             statement. Book your appointment today or call us!
           </p>
-          <button className="main-container__button">Learn More</button>
         </div>
       </section>
       <section className="main">
@@ -36,7 +35,6 @@ const MainSection = () => {
             lasting results. Experience comfort and hygiene at Nails 4 Life. Say
             hello to silky skin today!
           </p>
-          <button className="main-container__button">Learn More</button>
         </div>
       </section>
     </>

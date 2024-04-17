@@ -52,9 +52,8 @@ const Contact = () => {
       <div className="contact__socials-container">
         <h4 className="contact__heading">SOCIALS</h4>
         <div className="contact__socials">
-          <FaFacebook size={25} />
-          <FaTiktok size={25} />
-          <FaInstagram size={25} />
+          <a target="_blank" href="https://www.tiktok.com/@nails4life_surrey"><FaTiktok size={25} /></a>
+          <a target="_blank" href="https://www.instagram.com/nails4life_surrey/"><FaInstagram size={25} /></a>
         </div>
       </div>
     </div>

@@ -69,17 +69,28 @@ const NavBar = () => {
                 animate="visible"
                 transition={{ delay: index * 0.2 + 0.2 }}
               >
-                <Link
-                  to={item}
-                  spy={true}
-                  smooth={true}
-                  hashSpy={true}
-                  offset={-100}
-                  duration={500}
-                  onClick={handleLinkClick}
-                >
-                  <p className="navbar-list__item">{item}</p>
-                </Link>
+                {item === "Booking" ? (
+                  <a
+                    target="_blank"
+                    href="https://www.dashbooking.com/salon/nails-4-life"
+                    className="navbar-list__item"
+                    onClick={handleLinkClick}
+                  >
+                    {item}
+                  </a>
+                ) : (
+                  <Link
+                    to={item}
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-100}
+                    duration={500}
+                    onClick={handleLinkClick}
+                  >
+                    <p className="navbar-list__item">{item}</p>
+                  </Link>
+                )}
               </motion.li>
             ))}
           </motion.ul>

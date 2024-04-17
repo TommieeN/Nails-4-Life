@@ -6,6 +6,7 @@ const Testemonials = () => {
   return (
     <>
       <ImageCarousel />
+      
       {/* <section className="testemonial">
         {testemonials.map((test, index) => {
           return (

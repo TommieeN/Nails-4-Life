@@ -15,9 +15,6 @@ const Hero = () => {
       </div>
       <div className="hero-button">
         <a target="_blank" href="https://www.dashbooking.com/salon/nails-4-life"><button className="hero-button__primary">Book Now!</button></a>
-        <button className="hero-button__primary hero-button__primary-services">
-          Learn More
-        </button>
       </div>
     </section>
   );
