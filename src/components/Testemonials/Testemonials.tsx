@@ -6,7 +6,7 @@ const Testemonials = () => {
   return (
     <>
       <ImageCarousel />
-      <section className="testemonial">
+      {/* <section className="testemonial">
         {testemonials.map((test, index) => {
           return (
             <div className="testemonial__cards" key={index}>
@@ -23,7 +23,7 @@ const Testemonials = () => {
             </div>
           );
         })}
-      </section>
+      </section> */}
     </>
   );
 };
