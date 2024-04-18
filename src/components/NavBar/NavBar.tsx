@@ -49,9 +49,39 @@ const NavBar = () => {
     <nav className="navbar" ref={navbarRef}>
       <div className="navbar-container">
         <img className="navbar-container__logo" src={logo} alt="Logo" />
-        <div onClick={handleHamburgerClick}>
+        <div
+          className="navbar-container__hamburger"
+          onClick={handleHamburgerClick}
+        >
           {isDropdownOpen ? <IoCloseOutline size={38} /> : <RxHamburgerMenu />}
         </div>
+        <ul className="navbar-container__tablet-nav">
+          {["Home", "About Us", "Gallery", "Booking"].map((item, index) => (
+            <li key={index}>
+              {item === "Booking" ? (
+                <a
+                  href="https://www.dashbooking.com/salon/nails-4-life"
+                  target="_blank"
+                  onClick={handleLinkClick}
+                >
+                  {item}
+                </a>
+              ) : (
+                <Link
+                  to={item}
+                  spy={true}
+                  smooth={true}
+                  hashSpy={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={handleLinkClick}
+                >
+                  {item}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
       <AnimatePresence>
         {isDropdownOpen && (

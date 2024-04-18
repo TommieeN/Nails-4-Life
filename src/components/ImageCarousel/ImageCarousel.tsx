@@ -88,7 +88,7 @@ const ImageCarousel = () => {
               key={index}
               onClick={() => setImgIndex(index)}
               className={`carousel-container__dots ${
-                index === imgIndex ? "active" : ""
+                index === imgIndex ? "selected" : ""
               }`}
             />
           );
