@@ -1,6 +1,5 @@
 import "./Contact.scss";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
@@ -8,7 +7,7 @@ import { days } from "../../constants";
 const Contact = () => {
   return (
     <div className="contact">
-      <div>
+      <div className="contact__tablet">
         <h4 className="contact__heading">Address</h4>
         <p>
           <IoLocationOutline size={20} />
@@ -28,7 +27,7 @@ const Contact = () => {
           </a>
         </p>
       </div>
-      <div>
+      <div className="contact__tablet">
         <h4 className="contact__heading">Business Hours</h4>
         <div className="contact__hours">
           {days.map((day, index) => (
@@ -39,7 +38,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className="contact__tablet">
         <h4 className="contact__heading">Contact</h4>
         <p>
           <BsTelephone /> Telephone:{" "}
