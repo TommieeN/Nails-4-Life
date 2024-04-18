@@ -19,15 +19,24 @@ a {
 
 h1 {
     font-weight: 500;
+    @include desktop {
+        font-size: 4rem;
+    }
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 400;
+    @include desktop {
+        font-size: 3.5rem;
+    }
 }
 
 p {
     font-weight: 300;
     font-size: 1.08rem;
     color: #888888;
+    @include desktop {
+        font-size: 1.5rem;
+    }
 }

@@ -5,7 +5,7 @@ const MainSection = () => {
   return (
     <div className="tablet-container">
       <section className="main" id="About Us">
-        <div className="main__tablet">
+        <div className="main__tablet main__tablet--reverse">
           <img
             className="main-image"
             src={NailImage}
