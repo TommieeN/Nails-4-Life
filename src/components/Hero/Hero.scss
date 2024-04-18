@@ -11,6 +11,10 @@
     width: 100%;
     justify-content: space-evenly;
   }
+  @include desktop {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
 
   &-banner {
     width: 100%;
@@ -19,6 +23,9 @@
     @include tablet {
       width: 70%;
       height: 60vh;
+    }
+    @include desktop {
+      height: 75vh;
     }
 
   }
@@ -44,9 +51,9 @@
       background-color: #222222;
       color: #ffffff;
       @include button;
-      &-services {
-        background-color: #ebebeb;
-        color: #333333;
+      @include desktop {
+        padding: 0.45rem;
+        width: 100%;
       }
     }
   }
@@ -56,5 +63,22 @@
   @include tablet {
     display: flex;
     flex-direction: column;
+  }
+  @include desktop {
+    
+  }
+}
+
+.hero-desktop-text {
+  @include desktop {
+    font-size: 2rem;
+  }
+}
+
+.hero-desktop-container {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
