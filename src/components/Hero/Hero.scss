@@ -16,6 +16,10 @@
     width: 100%;
     height: 53vh;
     object-fit: cover;
+    @include tablet {
+      width: 70%;
+      height: 60vh;
+    }
 
   }
 
