@@ -80,3 +80,12 @@
     }
 
 }
+
+.contact__desktop {
+    @include desktop {
+        display: flex;
+        gap: 3rem;
+        margin-top: 2rem;
+        justify-content: space-evenly;
+    }
+}
