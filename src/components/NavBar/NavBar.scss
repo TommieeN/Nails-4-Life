@@ -10,6 +10,10 @@
   font-weight: 400;
   padding: 1rem 2rem;
   z-index: 2;
+  @include desktop {
+    padding: 1rem 6rem;
+  }
+
   &-container {
     display: flex;
     align-items: center;
@@ -27,6 +31,9 @@
       @include tablet {
         display: flex;
         gap: 1rem;
+      }
+      @include desktop {
+        gap: 2rem;
       }
     }
   }
