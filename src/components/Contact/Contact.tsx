@@ -27,7 +27,6 @@ const Contact = () => {
           </a>
         </p>
       </div>
-      <div className="contact__desktop">
       <div className="contact__tablet">
         <h4 className="contact__heading">Business Hours</h4>
         <div className="contact__hours">
@@ -39,22 +38,30 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <div className="contact__tablet">
-        <h4 className="contact__heading">Contact</h4>
-        <p>
-          <BsTelephone /> Telephone:{" "}
-          <a href="tel: +16043723800">(604) 372-3800</a>
-        </p>
-        <p className="contact__button">
-          <a href="tel: +16043723800">Call Now</a>
-        </p>
-      </div>
-      <div className="contact__socials-container">
-        <h4 className="contact__heading">SOCIALS</h4>
-        <div className="contact__socials">
-          <a target="_blank" href="https://www.tiktok.com/@nails4life_surrey"><FaTiktok size={25} /></a>
-          <a target="_blank" href="https://www.instagram.com/nails4life_surrey/"><FaInstagram size={25} /></a>
+      <div className="contact__desktop">
+        <div className="contact__tablet">
+          <h4 className="contact__heading">Contact</h4>
+          <p>
+            <BsTelephone /> Telephone:{" "}
+            <a href="tel: +16043723800">(604) 372-3800</a>
+          </p>
+          <p className="contact__button">
+            <a href="tel: +16043723800">Call Now</a>
+          </p>
         </div>
+        <div className="contact__socials-container">
+          <h4 className="contact__heading">SOCIALS</h4>
+          <div className="contact__socials">
+            <a target="_blank" href="https://www.tiktok.com/@nails4life_surrey">
+              <FaTiktok size={25} />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/nails4life_surrey/"
+            >
+              <FaInstagram size={25} />
+            </a>
+          </div>
         </div>
       </div>
     </div>

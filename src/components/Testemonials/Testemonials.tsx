@@ -3,7 +3,7 @@ import "./Testemonials.scss";
 const Testemonials = () => {
   return (
     <section className="carousel-tablet-container">
-      <h2>Gallery</h2>
+      <h2 className="carousel-tablet-container__heading">Gallery</h2>
       <ImageCarousel />
     </section>
   );

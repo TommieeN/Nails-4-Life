@@ -6,6 +6,12 @@
     @include tablet {
         margin-top: 2rem;
     }
+    &__heading {
+        padding: 1rem;
+        @include tablet {
+            text-align: center;
+        }
+    }
 }
 
 .testemonial {
