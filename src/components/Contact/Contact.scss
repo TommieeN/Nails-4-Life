@@ -30,6 +30,8 @@
     color: black;
 }
     &__tablet {
+        display: flex;
+        flex-direction: column;
         @include tablet {
             display: flex;
             flex-direction: column;
@@ -69,18 +71,17 @@
     }
 
     &__button {
-        border-radius: 14px;
-        background-color: #EFEFEF;
-        margin-top: 0.5rem;
-        padding: 0.5rem;
-        font-weight: 400;
-        font-size: 0.9rem;
-        width: fit-content;
+        cursor: pointer;
+        background-color: #efefef;
+        width: 40%;
+        text-align: center;
+        margin-top: 1rem;
+        border: 1px solid black;
+        @include button;
         @include tablet {
             margin-top: 1.5rem;
             width: 50%;
             font-size: 1.3rem;
-            border: 2px solid black;
         }
     }
 

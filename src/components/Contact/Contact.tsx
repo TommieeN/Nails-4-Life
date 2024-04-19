@@ -23,7 +23,7 @@ const Contact = () => {
         ></iframe>
         
           <a className="contact__button"target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8">
-          <p className="contact__call">Directions</p>
+          Directions
           </a>
         
       </div>
@@ -45,7 +45,7 @@ const Contact = () => {
           <a href="tel: +16043723800">(604) 372-3800</a>
         </p>
         <a className="contact__button" href="tel: +16043723800">
-          <p className="contact__call">Call Now</p>
+          Call Now
         </a>
       </div>
       <div className="contact__socials-container">
