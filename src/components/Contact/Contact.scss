@@ -21,7 +21,7 @@
         flex-wrap: wrap;
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 3rem 0;
 
     }
 
@@ -32,7 +32,7 @@
             align-items: center;
         }
         @include desktop {
-            width: 30%;
+            width: 40%;
         }
 
     }
@@ -50,7 +50,7 @@
             justify-self: center;
         }
         @include desktop {
-            width: 30%;
+            width: 40%;
         }
     }
 
@@ -96,11 +96,8 @@
 
 }
 
-.contact__desktop {
+.contact__tablet--desktop {
     @include desktop {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        padding: 2rem 0;
+        width: 40%;
     }
 }
