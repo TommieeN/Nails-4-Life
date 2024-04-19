@@ -21,11 +21,11 @@ const Contact = () => {
           height="300"
           loading="lazy"
         ></iframe>
-        <p className="contact__button">
-          <a target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8">
-            Directions
+        
+          <a className="contact__button"target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8">
+          <p className="contact__call">Directions</p>
           </a>
-        </p>
+        
       </div>
       <div className="contact__tablet">
         <h4 className="contact__heading">Business Hours</h4>
@@ -44,15 +44,22 @@ const Contact = () => {
           <BsTelephone /> Telephone:{" "}
           <a href="tel: +16043723800">(604) 372-3800</a>
         </p>
-        <p className="contact__button">
-          <a href="tel: +16043723800">Call Now</a>
-        </p>
+        <a className="contact__button" href="tel: +16043723800">
+          <p className="contact__call">Call Now</p>
+        </a>
       </div>
       <div className="contact__socials-container">
         <h4 className="contact__heading">SOCIALS</h4>
         <div className="contact__socials">
-          <a target="_blank" href="https://www.tiktok.com/@nails4life_surrey"><FaTiktok size={25} /></a>
-          <a target="_blank" href="https://www.instagram.com/nails4life_surrey/"><FaInstagram size={25} /></a>
+          <a target="_blank" href="https://www.tiktok.com/@nails4life_surrey">
+            <FaTiktok size={25} />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/nails4life_surrey/"
+          >
+            <FaInstagram size={25} />
+          </a>
         </div>
       </div>
     </div>
