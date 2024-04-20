@@ -9,6 +9,12 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('noModule' in HTMLScriptElement.prototype) {
+        const d=document,s=d.createElement('script');s.type='module';
+        s.src='https://w.behold.so/widget.js';d.body.appendChild(s);
+      }
+    </script>
     <script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
   </body>
 </html>
