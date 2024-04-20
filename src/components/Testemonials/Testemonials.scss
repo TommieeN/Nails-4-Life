@@ -3,40 +3,49 @@
 @use "../../styles/partials/mixins" as *;
 
 .carousel-tablet-container {
+  @include tablet {
+    margin-top: 2rem;
+  }
+  &__heading {
+    text-align: center;
+    padding: 1rem;
+  }
+  &__gallery {
+    text-align: center;
     @include tablet {
-        margin-top: 2rem;
+        margin: 0;
     }
-    &__heading {
-        padding: 1rem;
-        @include tablet {
-            text-align: center;
-        }
+    @include desktop {
+        text-align: left;
+      margin-left: 5rem;
     }
+  }
 }
 
 .testemonial {
-    padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__cards {
+    padding: 1rem;
+    border-radius: 2rem;
+    min-height: 20rem;
+    min-width: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  &__user {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    &__cards {
-        padding: 1rem;
-        border-radius: 2rem;
-        min-height: 20rem;
-        min-width: 15rem;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    &__user {
-        display: flex;
-        align-items: center;
-    }
-    &__name-container {
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-    }
-    &__name {
-        font-weight: 400;
-        color: black;
-    }
+    align-items: center;
+  }
+  &__name-container {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &__name {
+    font-weight: 400;
+    color: black;
+  }
+  
 }

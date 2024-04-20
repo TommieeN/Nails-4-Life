@@ -6,7 +6,10 @@ import { BsTelephone } from "react-icons/bs";
 import { days } from "../../constants";
 const Contact = () => {
   return (
-    <div id="Contact" className="contact">
+    <>
+    <h2 id="Contact" className="contact-header">Contact</h2>
+    <div className="contact">
+      
       <div className="contact__tablet">
         <h4 className="contact__heading">Address</h4>
         <p>
@@ -21,12 +24,11 @@ const Contact = () => {
           height="300"
           loading="lazy"
         ></iframe>
-        
           <a className="contact__button"target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8">
           Directions
           </a>
-        
       </div>
+      <div>
       <div className="contact__tablet">
         <h4 className="contact__heading">Business Hours</h4>
         <div className="contact__hours">
@@ -38,8 +40,10 @@ const Contact = () => {
           ))}
         </div>
       </div>
+      </div>
+      <div className="contact__desktop-container">
       <div className="contact__tablet contact__tablet--desktop">
-        <h4 className="contact__heading">Contact</h4>
+        <h4 className="contact__heading">Phone</h4>
         <p>
           <BsTelephone /> Telephone:{" "}
           <a href="tel: +16043723800">(604) 372-3800</a>
@@ -49,7 +53,7 @@ const Contact = () => {
         </a>
       </div>
       <div className="contact__socials-container">
-        <h4 className="contact__heading">SOCIALS</h4>
+        <h4 className="contact__heading">Follow Us</h4>
         <div className="contact__socials">
           <a target="_blank" href="https://www.tiktok.com/@nails4life_surrey">
             <FaTiktok size={25} />
@@ -62,7 +66,9 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      </div>
     </div>
+    </>
   );
 };
 

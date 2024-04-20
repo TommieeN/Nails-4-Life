@@ -1,5 +1,17 @@
 @use "../../styles/partials/mixins" as *;
 
+.contact-header {
+    margin-left: 1rem;
+    @include tablet {
+        text-align: center;
+        margin: 0;
+    }
+    @include desktop {
+        margin-left: 5rem;
+        text-align: left;
+    }
+}
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -17,13 +29,15 @@
         }
     }
     @include desktop {
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0;
-        margin: 3rem 0;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 3rem;
+        margin: 0;
         iframe {
-            width: 500px;
+            width: 400px;
+            height: 300px;
         }
     }
 &__call {
@@ -37,15 +51,15 @@
             flex-direction: column;
             align-items: center;
         }
-        @include desktop {
-            width: 40%;
-        }
 
     }
 
     &__heading {
         padding: 0.5rem 0;
         font-weight: 400;
+        @include desktop {
+            padding: 0;
+        }
     }
 
     &__socials-container {
@@ -54,9 +68,6 @@
         @include tablet {
             align-items: center;
             justify-self: center;
-        }
-        @include desktop {
-            width: 40%;
         }
     }
 
@@ -99,10 +110,17 @@
         text-align: center;
     }
 
+    &__desktop-business {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
-.contact__tablet--desktop {
+.contact__desktop-container {
     @include desktop {
-        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
     }
 }
