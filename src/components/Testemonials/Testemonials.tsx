@@ -1,4 +1,3 @@
-import ImageCarousel from "../ImageCarousel/ImageCarousel";
 import "./Testemonials.scss";
 const Testemonials = () => {
   return (
@@ -7,7 +6,6 @@ const Testemonials = () => {
       <div className='sk-ww-google-reviews' data-embed-id='25400597'></div>
       <h2 className="carousel-tablet-container__gallery">Gallery</h2>
       <behold-widget feed-id="euXvxC7dm501c1MThVhP"></behold-widget>
-      {/* <ImageCarousel /> */}
     </section>
   );
 };
