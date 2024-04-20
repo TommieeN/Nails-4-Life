@@ -6,7 +6,7 @@ import { BsTelephone } from "react-icons/bs";
 import { days } from "../../constants";
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="Contact" className="contact">
       <div className="contact__tablet">
         <h4 className="contact__heading">Address</h4>
         <p>

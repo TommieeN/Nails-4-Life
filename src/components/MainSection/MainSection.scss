@@ -40,7 +40,14 @@
   
     &-container {
       padding: 2rem 0;
-  
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+        gap: 2rem;
+      }
       &__text {
         color: #888888;
         padding-top: 1rem;
@@ -53,6 +60,9 @@
         cursor: pointer;
         @include button;
         margin-top: 1rem;
+        @include tablet {
+          width: 100%;
+        }
         @include desktop {
           width: 80%;
           padding: 0.8rem;

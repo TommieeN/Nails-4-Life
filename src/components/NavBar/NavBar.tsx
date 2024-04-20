@@ -56,7 +56,7 @@ const NavBar = () => {
           {isDropdownOpen ? <IoCloseOutline size={38} /> : <RxHamburgerMenu />}
         </div>
         <ul className="navbar-container__tablet-nav">
-          {["Home", "About Us", "Gallery", "Booking"].map((item, index) => (
+          {["Home", "About Us", "Gallery", "Contact", "Booking"].map((item, index) => (
             <li key={index}>
               {item === "Booking" ? (
                 <a
@@ -91,7 +91,7 @@ const NavBar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {["Home", "About Us", "Gallery", "Booking"].map((item, index) => (
+            {["Home", "About Us", "Gallery", "Contact", "Booking"].map((item, index) => (
               <motion.li
                 key={item}
                 variants={itemVariants}

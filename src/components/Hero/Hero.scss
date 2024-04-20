@@ -48,15 +48,22 @@
     display: flex;
     gap: 1rem;
     &__primary {
+      text-align: center;
       cursor: pointer;
       background-color: #222222;
       color: #ffffff;
       @include button;
+      @include tablet {
+        width: 100%;
+      }
       @include desktop {
         padding: 0.45rem;
         width: 100%;
       }
     }
+  }
+  &-button__text {
+    color: #ffffff;
   }
 }
 
@@ -77,6 +84,11 @@
 }
 
 .hero-desktop-container {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   @include desktop {
     display: flex;
     flex-direction: column;

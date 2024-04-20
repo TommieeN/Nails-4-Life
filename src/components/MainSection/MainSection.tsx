@@ -20,7 +20,12 @@ const MainSection = () => {
               and treat yourself to beautiful nails that make a statement. Book
               your appointment today or call us!
             </p>
-            <a target="_blank" href="https://www.dashbooking.com/salon/nails-4-life"><button className="main-container__button">Services</button></a>
+            <a
+              target="_blank"
+              href="https://www.dashbooking.com/salon/nails-4-life"
+            >
+              <button className="main-container__button">Services</button>
+            </a>
           </div>
         </div>
       </section>
@@ -39,7 +44,12 @@ const MainSection = () => {
               for lasting results. Experience comfort and hygiene at Nails 4
               Life. Say hello to silky skin today!
             </p>
-            <a target="_blank" href="https://www.dashbooking.com/salon/nails-4-life"><button className="main-container__button">Services</button></a>
+            <a
+              target="_blank"
+              href="https://www.dashbooking.com/salon/nails-4-life"
+            >
+              <button className="main-container__button">Services</button>
+            </a>
           </div>
         </div>
       </section>

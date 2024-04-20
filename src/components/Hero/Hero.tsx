@@ -22,7 +22,7 @@ const Hero = () => {
             target="_blank"
             href="https://www.dashbooking.com/salon/nails-4-life"
           >
-            <button className="hero-button__primary">Book Now!</button>
+            <p className="hero-button__text">Book Now!</p>
           </a>
         </div>
       </div>
