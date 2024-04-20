@@ -28,11 +28,8 @@
     }
     &__tablet-nav {
       display: none;
-      // @include tablet {
-      //   display: flex;
-      //   gap: 1rem;
-      // }
       @include desktop {
+        display: flex;
         gap: 2rem;
       }
     }

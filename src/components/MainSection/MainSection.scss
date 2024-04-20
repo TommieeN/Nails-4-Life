@@ -61,7 +61,8 @@
         @include button;
         margin-top: 1rem;
         @include tablet {
-          width: 100%;
+          width: 60%;
+          font-size: 1.08rem;
         }
         @include desktop {
           width: 80%;
