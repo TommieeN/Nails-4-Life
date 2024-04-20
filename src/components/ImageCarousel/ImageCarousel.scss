@@ -3,6 +3,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .carousel-container {
+    margin-bottom: 5rem;
     position: relative;
     overflow: hidden;
     &__image-container {
