@@ -28,6 +28,7 @@ const NavBar = () => {
     };
   }, []);
 
+  // Hamburger menu logic to drop menu
   const handleHamburgerClick = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
