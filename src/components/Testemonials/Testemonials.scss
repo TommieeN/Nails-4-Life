@@ -20,6 +20,15 @@
       margin-left: 5rem;
     }
   }
+  &__photos {
+    padding: 0 1rem;
+    @include tablet {
+      padding: 1rem;
+    }
+    @include desktop {
+      padding: 0 5rem;
+    }
+  }
 }
 
 .testemonial {
