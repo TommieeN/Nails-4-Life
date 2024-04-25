@@ -9,14 +9,14 @@ import "./HomePage.scss";
 const HomePage = () => {
   return (
     <main>
-      <NavBar/>
+      <NavBar />
       <Hero />
       <MainSection />
       <Testemonials />
       <Contact />
       <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

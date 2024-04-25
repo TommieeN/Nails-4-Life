@@ -11,9 +11,11 @@ const Testemonials = () => {
       <h2 id="Gallery" className="carousel-tablet-container__gallery">
         Gallery
       </h2>
-      <div className="carousel-tablet-container__photos">{(React.createElement as any)("behold-widget", {
-        "feed-id": "euXvxC7dm501c1MThVhP",
-      })}</div>
+      <div className="carousel-tablet-container__photos">
+        {(React.createElement as any)("behold-widget", {
+          "feed-id": "euXvxC7dm501c1MThVhP",
+        })}
+      </div>
     </section>
   );
 };

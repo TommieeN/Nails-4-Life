@@ -57,31 +57,33 @@ const NavBar = () => {
           {isDropdownOpen ? <IoCloseOutline size={38} /> : <RxHamburgerMenu />}
         </div>
         <ul className="navbar-container__tablet-nav">
-          {["Home", "About Us", "Reviews", "Gallery", "Contact", "Booking"].map((item, index) => (
-            <li key={index}>
-              {item === "Booking" ? (
-                <a
-                  href="https://www.dashbooking.com/salon/nails-4-life"
-                  target="_blank"
-                  onClick={handleLinkClick}
-                >
-                  {item}
-                </a>
-              ) : (
-                <Link
-                  to={item}
-                  spy={true}
-                  smooth={true}
-                  hashSpy={true}
-                  offset={-100}
-                  duration={500}
-                  onClick={handleLinkClick}
-                >
-                  {item}
-                </Link>
-              )}
-            </li>
-          ))}
+          {["Home", "About Us", "Reviews", "Gallery", "Contact", "Booking"].map(
+            (item, index) => (
+              <li key={index}>
+                {item === "Booking" ? (
+                  <a
+                    href="https://www.dashbooking.com/salon/nails-4-life"
+                    target="_blank"
+                    onClick={handleLinkClick}
+                  >
+                    {item}
+                  </a>
+                ) : (
+                  <Link
+                    to={item}
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-100}
+                    duration={500}
+                    onClick={handleLinkClick}
+                  >
+                    {item}
+                  </Link>
+                )}
+              </li>
+            )
+          )}
         </ul>
       </div>
       <AnimatePresence>
@@ -92,7 +94,14 @@ const NavBar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {["Home", "About Us", "Reviews", "Gallery", "Contact", "Booking"].map((item, index) => (
+            {[
+              "Home",
+              "About Us",
+              "Reviews",
+              "Gallery",
+              "Contact",
+              "Booking",
+            ].map((item, index) => (
               <motion.li
                 key={item}
                 variants={itemVariants}

@@ -14,24 +14,30 @@ const Hero = () => {
           <div className="hero-text">
             <p className="hero-desktop-text">Elevate Your Style</p>
             <p className="hero-desktop-text">Enhance Your Beauty</p>
-            <a target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8" className="hero-desktop-text">Located in Surrey, B.C, 15325 56 Ave #104</a>
+            <a
+              target="_blank"
+              href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8"
+              className="hero-desktop-text"
+            >
+              Located in Surrey, B.C, 15325 56 Ave #104
+            </a>
           </div>
         </div>
         <div className="hero-button">
           <a
-          className="hero-button__primary"
+            className="hero-button__primary"
             target="_blank"
             href="https://www.dashbooking.com/salon/nails-4-life"
           >
             <p className="hero-button__text">Book Now!</p>
           </a>
           <a
-          className="hero-button__primary"
+            className="hero-button__primary"
             target="_blank"
             href="https://www.dashbooking.com/salon/nails-4-life"
           >
             <p className="hero-button__text">Services</p>
-          </a> 
+          </a>
         </div>
       </div>
     </section>
