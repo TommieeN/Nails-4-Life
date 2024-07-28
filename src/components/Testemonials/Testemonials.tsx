@@ -7,7 +7,7 @@ const Testemonials = () => {
       <h2 id="Reviews" className="carousel-tablet-container__heading">
         Reviews
       </h2>
-      <div className="sk-ww-google-reviews" data-embed-id="25400597"></div>
+      <div className="elfsight-app-2334fd14-f9d7-4fa4-94e2-12cabb771548" data-elfsight-app-lazy></div>
       <h2 id="Gallery" className="carousel-tablet-container__gallery">
         Gallery
       </h2>

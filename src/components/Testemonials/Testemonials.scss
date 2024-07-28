@@ -62,9 +62,12 @@
   }
 }
 
-.sk-ww-google-reviews {
-  padding: 0.5rem;
+.elfsight-app-2334fd14-f9d7-4fa4-94e2-12cabb771548 {
+  padding: 0 1rem;
+  @include tablet {
+    padding: 0 2rem;
+  }
   @include desktop {
-    padding: 0 4.5rem;
+    padding: 0 5rem;
   }
 }
