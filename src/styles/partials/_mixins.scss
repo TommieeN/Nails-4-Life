@@ -13,7 +13,7 @@
 }
 
 @mixin button {
-  border: none;
+  border: 1px solid black;
   border-radius: 0.4rem;
   padding: 0.55rem;
   font-weight: 400;

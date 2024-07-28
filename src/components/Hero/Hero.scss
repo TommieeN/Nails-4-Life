@@ -80,8 +80,12 @@
 }
 
 .hero-desktop-text {
+  transition: color 0.3s ease-in-out;
   @include desktop {
     font-size: 2rem;
+  }
+  &:hover {
+    color: rgb(0, 217, 255);
   }
 }
 
