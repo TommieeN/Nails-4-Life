@@ -3,7 +3,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .hero {
-  height: 90vh;
+  height: 85vh;
   margin-top: 6rem;
   @include tablet {
     height: max-content;
@@ -47,6 +47,12 @@
     padding: 1rem;
     display: flex;
     gap: 1rem;
+    @include tablet {
+      flex-direction: column;
+    }
+    @include desktop {
+      flex-direction: row;
+    }
     &__primary {
       cursor: pointer;
       background-color: #efefef;
@@ -58,7 +64,7 @@
       @include button;
       @include tablet {
         width: 100%;
-        font-size: 1.3rem
+        font-size: 1.3rem;
       }
       @include desktop {
         width: 100%;
