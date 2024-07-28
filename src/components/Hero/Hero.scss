@@ -29,7 +29,6 @@
     @include desktop {
       height: 75vh;
     }
-
   }
 
   &-header {
@@ -49,16 +48,19 @@
     display: flex;
     gap: 1rem;
     &__primary {
-      text-align: center;
       cursor: pointer;
-      background-color: #222222;
-      color: #ffffff;
+      background-color: #efefef;
+      width: 40%;
+      text-align: center;
+      margin-top: 0.4rem;
+      border: 1px solid black;
+
       @include button;
       @include tablet {
         width: 100%;
+        font-size: 1.3rem
       }
       @include desktop {
-        padding: 0.45rem;
         width: 100%;
       }
     }
@@ -74,7 +76,6 @@
     flex-direction: column;
   }
   @include desktop {
-    
   }
 }
 
