@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
+import { AiFillGoogleCircle } from "react-icons/ai";
 import { days } from "../../constants";
 const Contact = () => {
   return (
@@ -61,16 +62,25 @@ const Contact = () => {
             <h4 className="contact__heading">Follow Us</h4>
             <div className="contact__socials">
               <a
+                className="contact__icon"
                 target="_blank"
                 href="https://www.tiktok.com/@nails4life_surrey"
               >
-                <FaTiktok size={25} />
+                <FaTiktok size={28} />
               </a>
               <a
+                className="contact__icon"
                 target="_blank"
                 href="https://www.instagram.com/nails4life_surrey/"
               >
-                <FaInstagram size={25} />
+                <FaInstagram size={30} />
+              </a>
+              <a
+                className="contact__icon"
+                target="_blank"
+                href="https://maps.app.goo.gl/DaZBcQNC2TaXm9to9"
+              >
+                <AiFillGoogleCircle size={30} />
               </a>
             </div>
           </div>
