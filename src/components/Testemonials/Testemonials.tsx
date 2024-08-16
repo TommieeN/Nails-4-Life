@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios"
 import "./Testemonials.scss";
 
+
 const Testemonials = () => {
+  const [reviews, setReviews] = useState([])
+
+  const api = "http://localhost:3000"
+
+  const getReviews = () => {
+    axios.get(`${api}`).then((response) => {
+      console.log(response.data)
+      setReviews(response.data)
+    })
+    .catch((error) => {
+      console.log("error", error);
+    })
+  }
+
+  useEffect(() => {
+    getReviews()
+  },[])
+
   return (
     <section className="carousel-tablet-container">
       <h2 id="Reviews" className="carousel-tablet-container__heading">
         Reviews
       </h2>
-      <div className="elfsight-app-2334fd14-f9d7-4fa4-94e2-12cabb771548" data-elfsight-app-lazy></div>
+      {}
       <h2 id="Gallery" className="carousel-tablet-container__gallery">
         Gallery
       </h2>
