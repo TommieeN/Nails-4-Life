@@ -1,0 +1,22 @@
+
+.testemonials {
+
+    &__star {
+        color: gold;
+        font-size: 1.5rem;
+    }
+
+    &__reviews {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+      &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 33%;
+      }
+    
+}

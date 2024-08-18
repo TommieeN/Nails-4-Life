@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Testemonials.scss";
+import ReviewCard from "../ReviewCard/ReviewCard";
 
 type ReviewType = {
   author: string;
@@ -32,23 +33,19 @@ const Testemonials: React.FC = () => {
   }, []);
 
   return (
-    <section className="carousel-tablet-container">
-      <h2 id="Reviews" className="carousel-tablet-container__heading">
+    <section className="testemonials">
+      <h2 className="testemonials__heading" id="Reviews">
         Reviews
       </h2>
-      {reviews.map((review: ReviewType) => (
-        <div key={review.author}>
-          <img src={review.profile_photo_url} alt="profile picture" />
-          <p>{review.author}</p>
-          <p>{review.rating}</p>
-          <p>{review.text}</p>
-          <p>{review.time}</p>
-        </div>
-      ))}
-      <h2 id="Gallery" className="carousel-tablet-container__gallery">
+      <div className="testimonials__reviews">
+        {reviews.map((review: ReviewType, index) => (
+          <ReviewCard key={index} review={review} />
+        ))}
+      </div>
+      <h2 id="Gallery" className="testemonials__gallery">
         Gallery
       </h2>
-      <div className="carousel-tablet-container__photos">
+      <div className="testemonials__photos">
         {(React.createElement as any)("behold-widget", {
           "feed-id": "euXvxC7dm501c1MThVhP",
         })}
