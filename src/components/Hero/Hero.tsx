@@ -16,6 +16,7 @@ const Hero = () => {
             <p className="hero-desktop-text">Enhance Your Beauty</p>
             <a
               target="_blank"
+              rel="noopener noreferrer" 
               href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8"
               className="hero-desktop-text"
             >

@@ -64,6 +64,7 @@ const NavBar = () => {
                   <a
                     href="https://www.dashbooking.com/salon/nails-4-life"
                     target="_blank"
+                    rel="noopener noreferrer" 
                     onClick={handleLinkClick}
                   >
                     {item}
@@ -112,6 +113,7 @@ const NavBar = () => {
                 {item === "Booking" ? (
                   <a
                     target="_blank"
+                    rel="noopener noreferrer" 
                     href="https://www.dashbooking.com/salon/nails-4-life"
                     className="navbar-list__item"
                     onClick={handleLinkClick}

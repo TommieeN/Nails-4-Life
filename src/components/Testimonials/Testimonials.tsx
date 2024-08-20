@@ -9,6 +9,7 @@ type ReviewType = {
   rating: number;
   text: string;
   time: string;
+  google_listing: string;
 };
 
 const testimonials: React.FC = () => {
@@ -20,7 +21,6 @@ const testimonials: React.FC = () => {
     axios
       .get(`${api}`)
       .then((response) => {
-        console.log(response.data);
         setReviews(response.data);
       })
       .catch((error) => {
@@ -37,10 +37,22 @@ const testimonials: React.FC = () => {
       <h2 className="testimonials__heading" id="Reviews">
         Reviews
       </h2>
-      <div className="testimonials__reviews">
-        {reviews.map((review: ReviewType, index) => (
-          <ReviewCard key={index} review={review} />
-        ))}
+      <div className="testimonials__container">
+        <div className="testimonials__reviews">
+          {reviews.map((review: ReviewType, index) => (
+            <ReviewCard key={index} review={review} />
+          ))}
+        </div>
+        {reviews && (
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.google.com/maps/place/?q=place_id:ChIJM2bsWtfPhVQRwL2W4qtTxJ8"
+            className="testimonials__button"
+          >
+            More Reviews
+          </a>
+        )}
       </div>
       <h2 id="Gallery" className="testimonials__gallery">
         Gallery

@@ -22,6 +22,7 @@ const MainSection = () => {
             </p>
             <a
               target="_blank"
+              rel="noopener noreferrer" 
               href="https://www.dashbooking.com/salon/nails-4-life"
             >
               <button className="main-container__button">Services</button>

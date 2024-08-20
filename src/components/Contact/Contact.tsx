@@ -16,7 +16,7 @@ const Contact = () => {
           <h4 className="contact__heading">Address</h4>
           <p>
             <IoLocationOutline size={20} />
-            <a target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8">
+            <a rel="noopener noreferrer" target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8">
               15325 56 Ave #104, Surrey, BC
             </a>
           </p>
@@ -28,6 +28,7 @@ const Contact = () => {
           ></iframe>
           <a
             className="contact__button"
+            rel="noopener noreferrer" 
             target="_blank"
             href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8"
           >
@@ -63,6 +64,7 @@ const Contact = () => {
             <div className="contact__socials">
               <a
                 className="contact__icon"
+                rel="noopener noreferrer"
                 target="_blank"
                 href="https://www.tiktok.com/@nails4life_surrey"
               >
@@ -77,6 +79,7 @@ const Contact = () => {
               </a>
               <a
                 className="contact__icon"
+                rel="noopener noreferrer" 
                 target="_blank"
                 href="https://maps.app.goo.gl/DaZBcQNC2TaXm9to9"
               >
