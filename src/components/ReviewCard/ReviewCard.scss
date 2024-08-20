@@ -1,22 +1,77 @@
+.testimonials {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(248, 248, 248);
+    border-radius: 3%;
+    margin: 1rem;
+  }
 
-.testemonials {
+  &__text-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    &__star {
-        color: gold;
-        font-size: 1.5rem;
-    }
+  &__text {
+    color: #111111;
+    font-size: 1rem;
+  }
 
-    &__reviews {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    
-      &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 33%;
-      }
-    
+  &__author-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.3rem;
+  }
+
+  &__author {
+    font-size: 0.95rem;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 0 0;
+  }
+
+  &__avatar-container {
+    position: relative;
+  }
+
+  &__google-logo {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background-color: white;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 100%;
+  }
+
+  &__time {
+    font-size: 0.8rem;
+  }
+
+  &__star {
+    color: gold;
+    font-size: 1.5rem;
+  }
+
+  &__toggle {
+    color: #197bff;
+  }
+
+  &__avatar {
+    width: 3rem;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./Testemonials.scss";
 import ReviewCard from "../ReviewCard/ReviewCard";
+import "./Testimonials.scss";
 
 type ReviewType = {
   author: string;
@@ -11,7 +11,7 @@ type ReviewType = {
   time: string;
 };
 
-const Testemonials: React.FC = () => {
+const testimonials: React.FC = () => {
   const [reviews, setReviews] = useState<ReviewType[]>([]);
 
   const api = "http://localhost:3000/place-details";
@@ -33,8 +33,8 @@ const Testemonials: React.FC = () => {
   }, []);
 
   return (
-    <section className="testemonials">
-      <h2 className="testemonials__heading" id="Reviews">
+    <section className="testimonials">
+      <h2 className="testimonials__heading" id="Reviews">
         Reviews
       </h2>
       <div className="testimonials__reviews">
@@ -42,10 +42,10 @@ const Testemonials: React.FC = () => {
           <ReviewCard key={index} review={review} />
         ))}
       </div>
-      <h2 id="Gallery" className="testemonials__gallery">
+      <h2 id="Gallery" className="testimonials__gallery">
         Gallery
       </h2>
-      <div className="testemonials__photos">
+      <div className="testimonials__photos">
         {(React.createElement as any)("behold-widget", {
           "feed-id": "euXvxC7dm501c1MThVhP",
         })}
@@ -54,4 +54,4 @@ const Testemonials: React.FC = () => {
   );
 };
 
-export default Testemonials;
+export default testimonials;

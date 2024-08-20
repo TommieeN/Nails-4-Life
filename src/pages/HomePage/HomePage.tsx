@@ -3,7 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Hero from "../../components/Hero/Hero";
 import MainSection from "../../components/MainSection/MainSection";
 import NavBar from "../../components/NavBar/NavBar";
-import Testemonials from "../../components/Testemonials/Testemonials";
+import Testimonials from "../../components/Testimonials/Testimonials";
 import "./HomePage.scss";
 
 const HomePage = () => {
@@ -12,7 +12,7 @@ const HomePage = () => {
       <NavBar />
       <Hero />
       <MainSection />
-      <Testemonials />
+      <Testimonials />
       <Contact />
       <Footer />
     </main>
