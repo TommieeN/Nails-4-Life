@@ -48,6 +48,10 @@
     position: relative;
   }
 
+  &__author-link :hover{
+    text-decoration: underline;
+  }
+
   &__google-logo {
     position: absolute;
     bottom: 5px;

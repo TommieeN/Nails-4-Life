@@ -10,6 +10,7 @@ type ReviewCardProps = {
     rating: number;
     text: string;
     time: string;
+    google_listing: string;
   };
 };
 
@@ -53,18 +54,28 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
       </div>
       <div className="testimonials__profile">
         <div className="testimonials__avatar-container">
-          <img
-            className="testimonials__avatar"
-            src={review.profile_photo_url}
-            alt="author-profile-picture"
-          />
-          <FcGoogle className="testimonials__google-logo" />
+          <a target="_blank" href={review.google_listing}>
+            <img
+              className="testimonials__avatar"
+              src={review.profile_photo_url}
+              alt="author-profile-picture"
+            />
+          </a>
+          <a target="_blank" href={review.google_listing}>
+            <FcGoogle className="testimonials__google-logo" />
+          </a>
         </div>
         <div className="testimonials__author-info">
-          <div className="testimonials__author-container">
-            <p className="testimonials__author">{truncatedAuthor}</p>
-            <MdVerified color="rgb(25, 123, 255)" />
-          </div>
+          <a
+            className="testimonials__author-link"
+            target="_blank"
+            href={review.google_listing}
+          >
+            <div className="testimonials__author-container">
+              <p className="testimonials__author">{truncatedAuthor}</p>
+              <MdVerified color="rgb(25, 123, 255)" />
+            </div>
+          </a>
           <p className="testimonials__time">{review.time}</p>
         </div>
       </div>
