@@ -1,12 +1,12 @@
 import "./Hero.scss";
-import hero from "../../assets/nail-assets/hero-nail-salon.jpg";
+import hero from "../../assets/nail-assets/hero-nail-salon.webp";
 const Hero = () => {
   return (
     <section className="hero" id="Home">
       <img
         className="hero-banner"
         src={hero}
-        alt="Young woman with white nail polish posing for a photo with hand on shoulder"
+        alt="Picture of the brand new nail salon with all new products and pedicure chairs"
       />
       <div className="hero-desktop-container">
         <div className="hero-tablet-text">
