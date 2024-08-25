@@ -3,15 +3,8 @@
 @use "../../styles/partials/mixins" as *;
 
 .hero {
-  // height: 100vh;
-  margin-top: 5rem;
   position: relative;
   @include tablet {
-    height: max-content;
-    display: flex;
-    width: 100%;
-    padding: 1rem 0 1rem 1rem;
-    justify-content: space-evenly;
   }
   @include desktop {
     padding: 0;
@@ -25,8 +18,6 @@
     object-fit: cover;
     display: block;
     @include tablet {
-      width: 70%;
-      height: 60vh;
     }
     @include desktop {
       height: 75vh;
@@ -36,24 +27,22 @@
   &__container {
     height: 100%;
     width: 100%;
+    gap: 2rem;
     position: absolute;
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 253, 253, 0.1));
-    backdrop-filter: blur(5px);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    // backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
     @include tablet {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
     @include desktop {
       display: flex;
@@ -63,9 +52,11 @@
   }
 
   &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
     @include tablet {
-      display: flex;
-      flex-direction: column;
     }
     @include desktop {
     }
@@ -85,14 +76,11 @@
 
   &__text {
     transition: color 0.3s ease-in-out;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 400;
     width: max-content;
     @include desktop {
       font-size: 2rem;
-    }
-    &:hover {
-      color: rgb(0, 217, 255);
     }
   }
 
@@ -108,7 +96,6 @@
     display: flex;
     gap: 1rem;
     @include tablet {
-      flex-direction: column;
     }
     @include desktop {
       flex-direction: row;
@@ -118,9 +105,9 @@
       cursor: pointer;
       width: 50%;
       text-align: center;
+      background-color: rgb(235, 235, 235);
       @include button;
       @include tablet {
-        width: 100%;
         font-size: 1.3rem;
       }
       @include desktop {

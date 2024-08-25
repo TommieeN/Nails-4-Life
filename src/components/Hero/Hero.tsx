@@ -42,14 +42,14 @@ const Hero = () => {
           <motion.h1 className="hero__header" variants={item}>
             Nails 4 Life
           </motion.h1>
-          <div className="hero__info-container">
+          {/* <div className="hero__info-container">
             <motion.p className="hero__text" variants={item}>
               Open 7 days a week
             </motion.p>
             <motion.p className="hero__text" variants={item}>
               Senior 10% Discount Every Day
             </motion.p>
-          </div>
+          </div> */}
         </div>
         <div className="hero__button">
           <a

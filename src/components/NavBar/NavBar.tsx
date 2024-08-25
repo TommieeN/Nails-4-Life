@@ -47,7 +47,10 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar" ref={navbarRef}>
+    <motion.nav
+      className={isDropdownOpen ? "navbar navbar--white" : "navbar"}
+      ref={navbarRef}
+    >
       <div className="navbar-container">
         <img className="navbar-container__logo" src={logo} alt="Logo" />
         <div
@@ -64,7 +67,7 @@ const NavBar = () => {
                   <a
                     href="https://www.dashbooking.com/salon/nails-4-life"
                     target="_blank"
-                    rel="noopener noreferrer" 
+                    rel="noopener noreferrer"
                     onClick={handleLinkClick}
                   >
                     {item}
@@ -91,9 +94,9 @@ const NavBar = () => {
         {isDropdownOpen && (
           <motion.ul
             className="navbar-list"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            variants={{visible: { opacity: 1, y: 0 },}}
+            initial={{opacity: 0}}
+            animate="visible"
           >
             {[
               "Home",
@@ -113,12 +116,11 @@ const NavBar = () => {
                 {item === "Booking" ? (
                   <a
                     target="_blank"
-                    rel="noopener noreferrer" 
+                    rel="noopener noreferrer"
                     href="https://www.dashbooking.com/salon/nails-4-life"
-                    className="navbar-list__item"
                     onClick={handleLinkClick}
                   >
-                    {item}
+                    <p className="navbar-list__item">{item}</p>
                   </a>
                 ) : (
                   <Link
@@ -138,7 +140,7 @@ const NavBar = () => {
           </motion.ul>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 };
 
