@@ -40,16 +40,8 @@ const Hero = () => {
       <div className="hero__container">
         <div className="hero__text-container">
           <motion.h1 className="hero__header" variants={item}>
-            Nails 4 Life
+          <span className="hero__header--polish">Polish</span> Your Look,<br/> <span className="hero__header--style">Perfect</span> Your Style!
           </motion.h1>
-          {/* <div className="hero__info-container">
-            <motion.p className="hero__text" variants={item}>
-              Open 7 days a week
-            </motion.p>
-            <motion.p className="hero__text" variants={item}>
-              Senior 10% Discount Every Day
-            </motion.p>
-          </div> */}
         </div>
         <div className="hero__button">
           <a
@@ -58,13 +50,6 @@ const Hero = () => {
             href="https://www.dashbooking.com/salon/nails-4-life"
           >
             Book Now!
-          </a>
-          <a
-            className="hero__button-primary"
-            target="_blank"
-            href="https://www.dashbooking.com/salon/nails-4-life"
-          >
-            Services
           </a>
         </div>
       </div>
