@@ -27,7 +27,7 @@
   &__container {
     height: 100%;
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
     position: absolute;
     display: flex;
     text-align: center;
@@ -37,8 +37,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    // background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    // backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
@@ -54,7 +52,7 @@
   &__text-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     height: 50%;
     @include tablet {
     }
@@ -116,11 +114,9 @@
 
     &-primary {
       cursor: pointer;
-      font-weight: 400;
       width: 50%;
       text-align: center;
       background-color: rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(1px);
       border-radius: 10px;
       @include button;
       @include tablet {

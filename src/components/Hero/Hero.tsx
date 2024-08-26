@@ -10,6 +10,7 @@ const container = {
     transition: {
       delayChildren: 0.3,
       staggerChildren: 0.2,
+      duration: 0.7,
     },
   },
 };
@@ -24,36 +25,42 @@ const item = {
 
 const Hero = () => {
   return (
-    <motion.section
-      className="hero"
-      id="Home"
-      variants={container}
-      initial="hidden"
-      animate="visible"
-    >
-      <motion.img
+    <section className="hero" id="Home">
+      <img
         className="hero__banner"
         src={hero}
         alt="Picture of the brand new nail salon with all new products and pedicure chairs"
-        variants={item}
       />
       <div className="hero__container">
-        <div className="hero__text-container">
+        <motion.div
+          className="hero__text-container"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
           <motion.h1 className="hero__header" variants={item}>
-          <span className="hero__header--polish">Polish</span> Your Look,<br/> <span className="hero__header--style">Perfect</span> Your Style!
+            <span className="hero__header--polish">Polish</span> Your Look,
+            <br /> <span className="hero__header--style">Perfect</span> Your
+            Style!
           </motion.h1>
-        </div>
-        <div className="hero__button">
-          <a
+        </motion.div>
+        <motion.div
+          className="hero__button"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.a
             className="hero__button-primary"
             target="_blank"
             href="https://www.dashbooking.com/salon/nails-4-life"
+            variants={item}
           >
             Book Now!
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
