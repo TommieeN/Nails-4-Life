@@ -3,87 +3,83 @@
 @use "../../styles/partials/mixins" as *;
 
 .main {
-    padding: 2rem;
+  background-color: #fee7e1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @include tablet {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    @include tablet {
-      margin-top: 6rem;
-      width: 100%;
-    }
-  
-    &__tablet {
-      @include tablet {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        gap: 3rem;
-      }
-    }
+  }
 
-    &-image {
-      width: 100%;
-      max-height: 15rem;
-      border-radius: 1.5rem;
-      object-fit: cover;
-      object-position: center;
-      @include tablet {
-        max-width: 40rem;
-        max-height: 50vh;
-        width: 100%;
-      }
-      @include desktop {
-        max-height: 65vh;
-      }
-    }
-  
-    &-container {
-      @include tablet {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0;
-        width: 100%;
-        gap: 2rem;
-      }
-      &__text {
-        color: #888888;
-        @include tablet {
-        max-width: 700px
-        }
-      }
-  
-      &__button {
-        cursor: pointer;
-        width: 40%;
-        @include button;
-        margin-top: 1rem;
-        @include tablet {
-          width: 60%;
-          font-size: 1.08rem;
-        }
-        @include desktop {
-          width: 80%;
-          padding: 0.8rem;
-          font-size: 1.3rem;
-        }
-      }
+  &__container {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 3rem;
     }
   }
-  
-  .tablet-container {
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    @include tablet {
+      max-width: 40rem;
+      max-height: 50vh;
+      width: 100%;
+    }
+    @include desktop {
+      max-height: 65vh;
+    }
+  }
+
+  &__section {
     @include tablet {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      width: 100%;
+      gap: 2rem;
     }
   }
 
-  .main__tablet--reverse {
-    @include desktop {
-      flex-direction: row;
+  &__text {
+    color: #888888;
+    @include tablet {
+      max-width: 700px;
     }
   }
-  
+
+  &__button {
+    cursor: pointer;
+    width: 40%;
+    @include button;
+    margin-top: 1rem;
+    @include tablet {
+      width: 60%;
+      font-size: 1.08rem;
+    }
+    @include desktop {
+      width: 80%;
+      padding: 0.8rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// .tablet-container {
+//   @include tablet {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
