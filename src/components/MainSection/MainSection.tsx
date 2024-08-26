@@ -10,7 +10,7 @@ const MainSection = () => {
             alt="hand posing on carpet with nails done"
           />
           <div className="main__section">
-            <h2 className="main__header">About Us</h2>
+            <h2 className="main__header">About Us<span className="main__header--about">.</span></h2>
             <p className="main__text">
               Under new management with fresh renovations, including brand new
               colors and luxurious pedicure chairs, Nails 4 Life offers an even better

@@ -4,7 +4,7 @@
 
 .main {
   background-color: #fee7e1;
-  padding: 2rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +30,9 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    transform: scaleX(-1);
+    transform: scaleY(-1);
+
     @include tablet {
       max-width: 40rem;
       max-height: 50vh;
@@ -41,6 +44,7 @@
   }
 
   &__section {
+    padding-bottom: 3rem;
     @include tablet {
       display: flex;
       flex-direction: column;
@@ -51,8 +55,14 @@
     }
   }
 
+  &__header--about {
+    font-weight: 500;
+    color: #ff0000;
+  }
+
   &__text {
     color: #888888;
+    text-align: left;
     @include tablet {
       max-width: 700px;
     }
@@ -62,6 +72,10 @@
     cursor: pointer;
     width: 40%;
     @include button;
+    &::after {
+      background-color: rgb(255, 0, 0);
+    }
+    
     margin-top: 1rem;
     @include tablet {
       width: 60%;
@@ -74,12 +88,3 @@
     }
   }
 }
-
-// .tablet-container {
-//   @include tablet {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }

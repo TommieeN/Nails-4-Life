@@ -14,18 +14,33 @@
 
 @mixin button {
   display: inline-block;
-  border: 2px solid #000;
+  position: relative; // Make the pseudo-element relative to the button
   padding: 10px 20px;
   font-weight: 400;
   font-size: 1rem;
-  color: #ffffff;
   text-decoration: none;
-  transition: 0.3s;
-  @include desktop {
-    max-width: 35%;
+  border: none; // Remove the border if you only want the underline
+  background-color: transparent; // Set background to transparent for a clean look
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 10px; // Keep the border-radius if needed
+
+  // Underline pseudo-element
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; // Thickness of the underline
+    background-color: #efff62; // Color of the underline
+    transform: scaleX(1);
+    transform-origin: center; //Scale from center
+    transition: transform 0.4s ease;
   }
+
   &:hover {
-    background: #000;
-    color: #efff62;
+    &::after {
+      transform: scaleX(0); // Scale the underline to full width
+    }
   }
 }
