@@ -20,7 +20,7 @@
     @include tablet {
     }
     @include desktop {
-      height: 75vh;
+      height: 100vh;
     }
   }
 
@@ -55,6 +55,7 @@
     justify-content: flex-end;
     height: 50%;
     @include tablet {
+      justify-content: center;
     }
     @include desktop {
     }

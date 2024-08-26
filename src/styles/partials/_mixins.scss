@@ -21,8 +21,11 @@
   color: #ffffff;
   text-decoration: none;
   transition: 0.3s;
+  @include desktop {
+    max-width: 35%;
+  }
   &:hover {
     background: #000;
-  color: #efff62;
-}
+    color: #efff62;
+  }
 }
