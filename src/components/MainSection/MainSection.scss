@@ -61,8 +61,8 @@
   }
 
   &__text {
-    color: #888888;
-    text-align: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
     @include tablet {
       max-width: 700px;
     }

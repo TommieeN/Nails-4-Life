@@ -14,7 +14,7 @@
 
   &__banner {
     width: 100%;
-    height: auto;
+    height: 100vh;
     object-fit: cover;
     display: block;
     @include tablet {
@@ -39,6 +39,7 @@
     z-index: 2;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+
     @include tablet {
     }
     @include desktop {
@@ -116,7 +117,7 @@
       cursor: pointer;
       width: 50%;
       text-align: center;
-      
+      color: white; 
       
       @include button;
       @include tablet {

@@ -1,5 +1,6 @@
 import "./MainSection.scss";
 import NailImage from "../../assets/nail-assets/bg-hero-glass.jpg";
+import Testimonials from "../Testimonials/Testimonials";
 const MainSection = () => {
   return (
       <section className="main" id="About Us">
