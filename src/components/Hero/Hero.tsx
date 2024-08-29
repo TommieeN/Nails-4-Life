@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import hero from "../../assets/nail-assets/bg-hero-lv.jpg";
+import hero from "../../assets/nail-assets/bg-hero.jpeg";
 import { motion } from "framer-motion";
 
 const container = {
@@ -15,7 +15,7 @@ const container = {
 };
 
 const item = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: -150, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
@@ -55,7 +55,7 @@ const Hero = () => {
             href="https://www.dashbooking.com/salon/nails-4-life"
             variants={item}
           >
-            Book Now!
+            BOOK AN APPOINTMENT!
           </motion.a>
         </motion.div>
       </div>

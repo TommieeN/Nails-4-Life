@@ -14,15 +14,15 @@
 
 @mixin button {
   display: inline-block;
-  position: relative; // Make the pseudo-element relative to the button
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 10px 20px;
   font-weight: 400;
   font-size: 1rem;
   text-decoration: none;
-  border: none; // Remove the border if you only want the underline
-  background-color: transparent; // Set background to transparent for a clean look
-  transition: color 0.3s, background-color 0.3s;
-  border-radius: 10px; // Keep the border-radius if needed
+  border: none;
+  background-color: transparent;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
 
   // Underline pseudo-element
   &::after {
@@ -31,16 +31,18 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; // Thickness of the underline
-    background-color: #efff62; // Color of the underline
+    height: 2px; 
+    background-color: #efff62; 
     transform: scaleX(1);
-    transform-origin: center; //Scale from center
+    transform-origin: center;
     transition: transform 0.4s ease;
   }
 
   &:hover {
+    box-shadow: none;
     &::after {
-      transform: scaleX(0); // Scale the underline to full width
+      transform: scaleX(0);
+      
     }
   }
 }
