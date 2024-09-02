@@ -49,9 +49,30 @@
     }
   }
 
+  &__list {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: sans-serif;
+  }
+
+  &__item {
+    font-weight: 300;
+    &--text {
+      font-weight: bold;
+    }
+    &--italic {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+
   &__button {
     cursor: pointer;
-    width: 40%;
+    width: 50%;
+    max-width: 50%;
     margin-top: 1rem;
     @include button;
     @include tablet {

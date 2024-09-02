@@ -35,7 +35,7 @@ const testimonials: React.FC = () => {
   return (
     <section className="testimonials">
       <h2 className="testimonials__heading" id="Reviews">
-        Reviews
+        Hear from Our Guests
       </h2>
       <div className="testimonials__container">
         <div className="testimonials__reviews">
