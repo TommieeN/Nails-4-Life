@@ -37,7 +37,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 255, 255, 0.25);
     @include tablet {
     }
     @include desktop {
@@ -51,7 +51,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50%;
     @include tablet {
       justify-content: center;
     }
@@ -64,14 +63,12 @@
 
     &--polish {
       color: $primary-color;
-      font-style: italic;
       font-weight: 500;
     }
 
     &--style {
       color: $primary-color;
       font-weight: 500;
-      font-style: italic;
     }
   }
 
@@ -94,6 +91,7 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
+    height: 30%;
     @include tablet {
     }
     @include desktop {
@@ -104,9 +102,10 @@
       cursor: pointer;
       width: 60%;
       text-align: center;
-      color: $secondary-color; 
+      color: $primary-color; 
+      height: fit-content;
       &:hover {
-        color: $primary-color;
+        color: $secondary-color;
       }
       @include button;
       @include tablet {

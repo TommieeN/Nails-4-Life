@@ -6,11 +6,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "PlayfairDisplay", sans-serif;
-    font-weight: 300;
     list-style: none;
     line-height: 1.5em;
     text-decoration: none;
+}
+
+body {
+    background: $secondary-color;
+    font-family: "PlayfairDisplay", sans-serif;
 }
 
 a {
@@ -44,7 +47,7 @@ h2 {
 p {
     font-weight: 300;
     font-size: 1rem;
-    color: $secondary-color;
+    color: $primary-color;
     @include desktop {
         font-size: 1.5rem;
     }
