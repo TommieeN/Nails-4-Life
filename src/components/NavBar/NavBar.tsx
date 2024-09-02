@@ -3,7 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
-import logo from "../../assets/logos/logo2.svg";
+import logo from "../../assets/logos/logo2.png";
 import "./NavBar.scss";
 
 const NavBar = () => {

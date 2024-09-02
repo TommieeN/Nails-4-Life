@@ -16,6 +16,7 @@
   display: inline-block;
   position: relative;
   padding: 10px 20px;
+  font-family: sans-serif;
   font-weight: 400;
   font-size: 1rem;
   text-decoration: none;
@@ -26,6 +27,7 @@
   &:hover {
     box-shadow: none;
     background-color: black;
+    color: #f8f9fa;
     &::after {
       transform: scaleX(0);
       
