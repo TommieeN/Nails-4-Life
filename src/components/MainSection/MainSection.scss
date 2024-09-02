@@ -29,6 +29,7 @@
   &__section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
     @include tablet {
       display: flex;
