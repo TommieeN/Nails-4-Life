@@ -3,15 +3,15 @@
 @use "../../styles/partials/mixins" as *;
 
 .testimonials {
+  font-family: sans-serif;
   &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 1rem;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
     border-radius: 3%;
-    margin: 1rem;
     @include tablet {
         width: 33%;
     }
@@ -82,6 +82,7 @@
 
   &__toggle {
     color: #197bff;
+    cursor: pointer;
   }
 
   &__avatar {

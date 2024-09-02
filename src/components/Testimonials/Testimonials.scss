@@ -3,6 +3,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .testimonials {
+  padding: 2rem;
   @include tablet {
     margin-top: 2rem;
   }
@@ -10,6 +11,7 @@
   &__heading {
     text-align: center;
     padding: 1rem;
+    font-family: "PlayfairDisplay", sans-serif;
     @include desktop {
       text-align: left;
       padding: 0 5rem;
@@ -20,6 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
 
   &__reviews {
@@ -27,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    gap: 2rem;
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
@@ -50,7 +53,9 @@
   }
 
   &__gallery {
+    padding: 2rem;
     text-align: center;
+    font-family: "PlayfairDisplay", sans-serif;
     @include tablet {
       margin: 0;
     }
@@ -61,7 +66,6 @@
   }
 
   &__photos {
-    padding: 0 1rem;
     @include tablet {
       padding: 1rem;
     }
