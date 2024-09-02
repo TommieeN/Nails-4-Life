@@ -3,7 +3,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .main {
-  background-color: #fee7e1;
+  background-color: #ffffff;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -23,23 +23,6 @@
       flex-direction: row-reverse;
       align-items: center;
       gap: 3rem;
-    }
-  }
-
-  &__image {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    transform: scaleX(-1);
-    transform: scaleY(-1);
-
-    @include tablet {
-      max-width: 40rem;
-      max-height: 50vh;
-      width: 100%;
-    }
-    @include desktop {
-      max-height: 65vh;
     }
   }
 

@@ -28,7 +28,7 @@ const Hero = () => {
       <img
         className="hero__banner"
         src={hero}
-        alt="Picture of the brand new nail salon with all new products and pedicure chairs"
+        alt="Picture of a cart filled with nail supplies"
       />
       <div className="hero__container">
         <motion.div
