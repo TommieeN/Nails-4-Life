@@ -2,23 +2,28 @@ import "./Hero.scss";
 import hero from "../../assets/nail-assets/bg-hero.jpeg";
 import { motion } from "framer-motion";
 
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const item = {
+const h1Variant = {
   hidden: { y: -150, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const buttonVariant = {
+  hidden: { y: 50, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 0.3, 
+      ease: "easeInOut",
+    },
   },
 };
 
@@ -31,13 +36,15 @@ const Hero = () => {
         alt="Picture of a cart filled with nail supplies"
       />
       <div className="hero__container">
+        {/* Animate the h1 separately */}
         <motion.div
           className="hero__text-container"
-          variants={container}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={h1Variant}
         >
-          <motion.h1 className="hero__header" variants={item}>
+          <motion.h1 className="hero__header">
             <span className="hero__header--polish">Polish</span> Your Look,
             <br /> <span className="hero__header--style">Perfect</span> Your
             Style!
@@ -45,15 +52,15 @@ const Hero = () => {
         </motion.div>
         <motion.div
           className="hero__button"
-          variants={container}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={buttonVariant}
         >
           <motion.a
             className="hero__button-primary"
             target="_blank"
             href="https://www.dashbooking.com/salon/nails-4-life"
-            variants={item}
           >
             BOOK AN APPOINTMENT!
           </motion.a>
