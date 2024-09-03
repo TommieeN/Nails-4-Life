@@ -26,12 +26,31 @@ const cardVariants = {
   },
 };
 
+const buttonVariant = {
+  hidden: { y: 50, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 0.9, 
+      ease: "easeInOut",
+    },
+  },
+};
+
 const MainSection = () => {
   return (
     <section className="main" id="About Us">
       <div className="main__container">
         <div className="main__section">
-          <motion.h2 className="main__header" variants={cardVariants} viewport={{ once: true }}>
+          <motion.h2
+            className="main__header"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             Ultimate Relaxation
           </motion.h2>
           <motion.ul
@@ -56,14 +75,20 @@ const MainSection = () => {
               </motion.li>
             ))}
           </motion.ul>
-          <a
+
+          {/* Animate the button separately */}
+          <motion.a
             className="main__button"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.dashbooking.com/salon/nails-4-life"
+            variants={buttonVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
           >
             BOOK AN APPOINTMENT
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>
