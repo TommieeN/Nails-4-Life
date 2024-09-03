@@ -1,5 +1,4 @@
 import Contact from "../../components/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
 import Hero from "../../components/Hero/Hero";
 import MainSection from "../../components/MainSection/MainSection";
 import NavBar from "../../components/NavBar/NavBar";
@@ -14,7 +13,6 @@ const HomePage = () => {
       <MainSection />
       <Testimonials />
       <Contact />
-      <Footer />
     </main>
   );
 };

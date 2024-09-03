@@ -50,7 +50,7 @@ const testimonials: React.FC = () => {
             href="https://www.google.com/maps/place/?q=place_id:ChIJM2bsWtfPhVQRwL2W4qtTxJ8"
             className="testimonials__button"
           >
-            More Reviews
+            MORE REVIEWS
           </a>
         )}
       </div>

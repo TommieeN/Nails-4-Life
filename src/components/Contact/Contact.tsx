@@ -7,19 +7,21 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { days } from "../../constants";
 const Contact = () => {
   return (
-    <>
+    <footer>
       <h2 id="Contact" className="contact-header">
         Contact
       </h2>
       <div className="contact">
         <div className="contact__tablet">
-          <h4 className="contact__heading">Address</h4>
-          <p>
+          <div className="contact__wrapper">
+          <h4 className="contact__heading">Address:</h4>
+          <p className="contact__address-text">
             <IoLocationOutline size={20} />
             <a rel="noopener noreferrer" target="_blank" href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8">
               15325 56 Ave #104, Surrey, BC
             </a>
           </p>
+          </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2612.0182633133295!2d-122.8008506!3d49.1052935!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485cfd75aec6633%3A0x9fc453abe296bdc0!2sNails%204%20Life%20(%20under%20new%20management)!5e0!3m2!1sen!2sca!4v1713377388318!5m2!1sen!2sca"
             width="290"
@@ -32,7 +34,7 @@ const Contact = () => {
             target="_blank"
             href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8"
           >
-            Directions
+            DIRECTIONS
           </a>
         </div>
         <div>
@@ -56,7 +58,7 @@ const Contact = () => {
               <a href="tel: +16043723800">(604) 372-3800</a>
             </p>
             <a className="contact__button" href="tel: +16043723800">
-              Call Now
+              CALL NOW
             </a>
           </div>
           <div className="contact__socials-container">
@@ -89,7 +91,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+      <p className="contact-footer">© All rights reserved. 2024 Nails 4 Life</p>
+    </footer>
   );
 };
 
