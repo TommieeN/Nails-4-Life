@@ -21,7 +21,7 @@ const buttonVariant = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      delay: 0.3, 
+      delay: 0.3,
       ease: "easeInOut",
     },
   },
@@ -36,7 +36,6 @@ const Hero = () => {
         alt="Picture of a cart filled with nail supplies"
       />
       <div className="hero__container">
-        {/* Animate the h1 separately */}
         <motion.div
           className="hero__text-container"
           initial="hidden"

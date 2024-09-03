@@ -33,7 +33,7 @@ const buttonVariant = {
     opacity: 1,
     transition: {
       duration: 0.5,
-      delay: 0.9, 
+      delay: 0.9,
       ease: "easeInOut",
     },
   },
@@ -75,8 +75,6 @@ const MainSection = () => {
               </motion.li>
             ))}
           </motion.ul>
-
-          {/* Animate the button separately */}
           <motion.a
             className="main__button"
             target="_blank"
