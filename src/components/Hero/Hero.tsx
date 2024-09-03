@@ -1,31 +1,7 @@
 import "./Hero.scss";
 import hero from "../../assets/nail-assets/bg-hero.jpeg";
 import { motion } from "framer-motion";
-
-const h1Variant = {
-  hidden: { y: -150, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const buttonVariant = {
-  hidden: { y: 50, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      delay: 0.3,
-      ease: "easeInOut",
-    },
-  },
-};
+import { h1Variant, buttonVariant } from "../../animations/animations";
 
 const Hero = () => {
   return (

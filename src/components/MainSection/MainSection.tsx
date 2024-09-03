@@ -1,43 +1,7 @@
 import "./MainSection.scss";
 import { motion } from "framer-motion";
 import { services } from "../../constants";
-
-const container = {
-  hidden: { opacity: 0, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.4,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const buttonVariant = {
-  hidden: { y: 50, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      delay: 0.9,
-      ease: "easeInOut",
-    },
-  },
-};
+import { container, cardVariants, buttonVariant } from "../../animations/animations";
 
 const MainSection = () => {
   return (
