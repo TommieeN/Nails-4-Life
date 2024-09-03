@@ -1,32 +1,61 @@
 import "./MainSection.scss";
+import { motion } from "framer-motion";
+import { services } from "../../constants";
+
+const container = {
+  hidden: { opacity: 0, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const MainSection = () => {
   return (
     <section className="main" id="About Us">
       <div className="main__container">
         <div className="main__section">
-          <h2 className="main__header">Ultimate Relaxation</h2>
-          <ul className="main__list">
-            <li className="main__item">
-              <span className="main__item--text">Special Discounts </span> |
-              Groups of 6 or more? Enjoy 20% off!{" "}
-              <span className="main__item--italic">
-                (Deposit required in person)
-              </span>
-            </li>
-            <li className="main__item">
-              <span className="main__item--text">Personalized Services </span> |
-              Customized treatments to suit your individual needs.
-            </li>
-            <li className="main__item">
-              <span className="main__item--text">Experienced Team </span> |
-              Highly trained professionals dedicated to excellence.
-            </li>
-            <li className="main__item">
-              <span className="main__item--text">Flexible Appointments </span> |
-              Easy booking through our online platform.
-            </li>
-          </ul>
+          <motion.h2 className="main__header" variants={cardVariants} viewport={{ once: true }}>
+            Ultimate Relaxation
+          </motion.h2>
+          <motion.ul
+            className="main__list"
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {services.map((service, index) => (
+              <motion.li
+                key={index}
+                className="main__item"
+                variants={cardVariants}
+                viewport={{ once: true }}
+              >
+                <span className="main__item--text">{service.text}</span> |{" "}
+                {service.description}{" "}
+                {service.italic && (
+                  <span className="main__item--italic">{service.italic}</span>
+                )}
+              </motion.li>
+            ))}
+          </motion.ul>
           <a
             className="main__button"
             target="_blank"
