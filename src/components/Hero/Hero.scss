@@ -4,8 +4,6 @@
 
 .hero {
   position: relative;
-  @include tablet {
-  }
   @include desktop {
     padding: 0;
     justify-content: flex-start;
@@ -93,6 +91,7 @@
     justify-content: center;
     height: 20%;
     @include tablet {
+      height: 0;
     }
     @include desktop {
       flex-direction: row;
@@ -100,7 +99,8 @@
 
     &-primary {
       cursor: pointer;
-      width: 60%;
+      width: 100%;
+      max-width: 20rem;
       text-align: center;
       color: $primary-color; 
       height: fit-content;
@@ -109,7 +109,8 @@
       }
       @include button;
       @include tablet {
-        font-size: 1.3rem;
+        width: 45%;
+        max-width: 45%;
       }
       @include desktop {
         width: 100%;

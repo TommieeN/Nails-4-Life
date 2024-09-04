@@ -12,10 +12,10 @@ type ReviewType = {
   google_listing: string;
 };
 
+const api = import.meta.env.VITE_API_URL;
+
 const testimonials: React.FC = () => {
   const [reviews, setReviews] = useState<ReviewType[]>([]);
-
-  const api = "http://localhost:3000/place-details";
 
   const getReviews = () => {
     axios
