@@ -1,5 +1,5 @@
 @use "../../styles/partials/mixins" as *;
-
+@use "../../styles//partials/variables" as *;
 .contact-header {
   text-align: center;
   padding: 2rem;
@@ -97,10 +97,18 @@
 
   &__icon {
     color: #000;
-    transition: color 0.3s ease-in-out;
+    transition: color, background-color 0.3s ease-in-out;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__icon:hover {
-    color: rgb(0, 217, 255);
+    color: $secondary-color;
+    background-color: black;
   }
   &__text {
     font-size: 0.85rem;
@@ -109,7 +117,6 @@
 
   &__button {
     cursor: pointer;
-    background-color: #efefef;
     width: 65%;
     max-width: 65%;
     text-align: center;

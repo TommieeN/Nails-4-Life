@@ -1,10 +1,10 @@
 import "./Contact.scss";
 import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
-import { AiFillGoogleCircle } from "react-icons/ai";
+import { FaGoogle } from "react-icons/fa";
 import { days } from "../../constants";
+import { FaTiktok } from "react-icons/fa";
 const Contact = () => {
   return (
     <footer>
@@ -75,7 +75,7 @@ const Contact = () => {
               target="_blank"
               href="https://www.tiktok.com/@nails4life_surrey"
             >
-              <FaTiktok size={28} />
+              <FaTiktok size={25} />
             </a>
             <a
               className="contact__icon"
@@ -90,7 +90,7 @@ const Contact = () => {
               target="_blank"
               href="https://maps.app.goo.gl/DaZBcQNC2TaXm9to9"
             >
-              <AiFillGoogleCircle size={30} />
+              <FaGoogle size={25} />
             </a>
           </div>
         </div>
