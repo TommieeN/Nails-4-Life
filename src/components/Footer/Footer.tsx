@@ -1,22 +1,49 @@
 import "./Footer.scss";
-import { FaInstagram } from "react-icons/fa";
-import { FaGoogle } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaGoogle, FaTiktok } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const fadeInVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2, 
+    },
+  },
+};
 
 const Footer = () => {
   return (
-    <footer id="Contact">
-      <div className="contact">
+    <motion.footer
+      id="Contact"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
+    >
+      <motion.div className="contact" variants={fadeInVariant}>
         <div className="contact__info">
-          <div className="contact__hours-container">
+          <motion.div className="contact__hours-container" variants={fadeInVariant}>
             <h4 className="contact__heading">Hours:</h4>
             <p className="contact__hours">
               Monday - Friday 10AM-7:00PM, Saturday 10AM-6:00PM, Sunday 11AM-5PM
             </p>
-          </div>
+          </motion.div>
         </div>
+
         <div className="contact__info">
-          <div className="contact__wrapper">
+          <motion.div className="contact__wrapper" variants={fadeInVariant}>
             <h4 className="contact__heading">Address:</h4>
             <p className="contact__address-text">
               <a
@@ -27,18 +54,20 @@ const Footer = () => {
                 15325 56 Ave #104, Surrey, BC
               </a>
             </p>
-          </div>
+          </motion.div>
         </div>
+
         <div className="contact__info">
-          <div className="contact__phone-container">
+          <motion.div className="contact__phone-container" variants={fadeInVariant}>
             <h4 className="contact__heading">Phone:</h4>
             <p className="contact__phone">
               <a href="tel: +16043723800">(604) 372-3800</a>
             </p>
-          </div>
+          </motion.div>
         </div>
+
         <div className="contact__info">
-          <div className="contact__socials">
+          <motion.div className="contact__socials" variants={fadeInVariant}>
             <a
               className="contact__icon"
               rel="noopener noreferrer"
@@ -62,11 +91,13 @@ const Footer = () => {
             >
               <FaGoogle className="contact__google-icon" />
             </a>
-          </div>
+          </motion.div>
         </div>
-      </div>
-      <p className="contact-footer">© All rights reserved. 2024 Nails 4 Life</p>
-    </footer>
+      </motion.div>
+      <motion.p className="contact-footer" variants={fadeInVariant}>
+        © All rights reserved. 2024 Nails 4 Life
+      </motion.p>
+    </motion.footer>
   );
 };
 
