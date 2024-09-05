@@ -12,7 +12,7 @@ const Contact = () => {
         Contact
       </h2>
       <div className="contact">
-        <div className="contact__tablet">
+        <div className="contact__info">
           <div className="contact__wrapper">
             <h4 className="contact__heading">Address:</h4>
             <p className="contact__address-text">
@@ -41,7 +41,7 @@ const Contact = () => {
             DIRECTIONS
           </a>
         </div>
-          <div className="contact__tablet">
+          <div className="contact__info">
             <h4 className="contact__heading">Business Hours</h4>
             <div className="contact__hours">
               {days.map((day, index) => (
@@ -52,15 +52,13 @@ const Contact = () => {
               ))}
             </div>
           </div>
-        <div className="contact__desktop-container">
-          <div className="contact__tablet contact__tablet--desktop">
+          <div className="contact__info">
             <h4 className="contact__heading">Phone</h4>
             <p className="contact__phone">
               <a href="tel: +16043723800">(604) 372-3800</a>
             </p>
           </div>
-        </div>
-        <div className="contact__socials-container">
+        <div className="contact__info">
           <h4 className="contact__heading">Follow Us</h4>
           <div className="contact__socials">
             <a
