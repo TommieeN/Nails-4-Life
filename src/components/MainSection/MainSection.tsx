@@ -49,7 +49,7 @@ const MainSection = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            BOOK AN APPOINTMENT
+            BOOK AN APPOINTMENT!
           </motion.a>
         </div>
       </div>
