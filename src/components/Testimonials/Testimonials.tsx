@@ -4,8 +4,7 @@ import ReviewCard from "../ReviewCard/ReviewCard";
 import "./Testimonials.scss";
 import { motion } from "framer-motion";
 
-// const api = import.meta.env.VITE_API_URL;
-const api = "http://localhost:3000/place-details";
+const api = import.meta.env.VITE_API_URL;
 
 type ReviewType = {
   author: string;
