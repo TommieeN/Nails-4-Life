@@ -35,13 +35,13 @@ const testimonials: React.FC = () => {
   }, []);
 
   const fadeInVariant = {
-    hidden: { opacity: 0, y: 50 }, 
+    hidden: { opacity: 0, y: 50 },
     visible: {
-      opacity: 1, 
-      y: 0, 
+      opacity: 1,
+      y: 0,
       transition: {
-        duration: 0.5, 
-        ease: "easeInOut", 
+        duration: 0.5,
+        ease: "easeInOut",
       },
     },
   };
@@ -50,7 +50,7 @@ const testimonials: React.FC = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2, 
+        staggerChildren: 0.2,
       },
     },
   };
@@ -72,13 +72,13 @@ const testimonials: React.FC = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.1 }} 
+        viewport={{ once: false, amount: 0.1 }}
       >
         <div className="testimonials__reviews">
           {reviews.map((review: ReviewType, index) => (
             <motion.div
               key={index}
-              variants={fadeInVariant} 
+              variants={fadeInVariant}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -99,14 +99,27 @@ const testimonials: React.FC = () => {
           </a>
         )}
       </motion.div>
-      <h2 id="Gallery" className="testimonials__gallery">
+      <motion.h2
+        id="Gallery"
+        className="testimonials__gallery"
+        variants={fadeInVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         Gallery
-      </h2>
-      <div className="testimonials__photos">
+      </motion.h2>
+      <motion.div
+        className="testimonials__photos"
+        variants={fadeInVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         {(React.createElement as any)("behold-widget", {
           "feed-id": "euXvxC7dm501c1MThVhP",
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };
