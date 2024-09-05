@@ -11,10 +11,10 @@
 }
 
 .contact-footer {
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 0.6rem;
-    padding: 0.5rem;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.6rem;
+  padding: 0.5rem;
 }
 
 .contact {
@@ -25,33 +25,20 @@
   align-items: center;
   text-align: center;
   font-family: sans-serif;
-  iframe {
-    width: 275px;
-    height: 275px;
-  }
+  
   @include tablet {
     font-size: 1.9rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    iframe {
-      width: 450px;
-      height: 450px;
-    }
-  }
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: flex-start;
-    iframe {
-      width: 400px;
-      height: 300px;
-    }
   }
+  // @include desktop {
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: flex-start;
+  // }
   &__call {
     color: black;
   }
@@ -65,16 +52,18 @@
       flex-direction: column;
       align-items: center;
     }
-    @include desktop {
-      padding-top: 1rem;
-      width: 45%;
-    }
+    // @include desktop {
+    //   padding-top: 1rem;
+    //   width: 45%;
+    // }
   }
 
   &__heading {
-    font-weight: 400;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
     @include tablet {
-      font-size: 1.5rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -89,7 +78,7 @@
     font-size: 1rem;
     text-decoration: underline;
     @include tablet {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
@@ -118,25 +107,23 @@
     width: 10%;
   }
 
-  &__button {
-    cursor: pointer;
-    width: 100%;
-    max-width: 65%;
-    text-align: center;
-    margin-top: 0.5rem;
-    border: 1px solid black;
-    @include button;
-
+  &__hours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     @include tablet {
-      margin-top: 1.5rem;
-      max-width: 14rem;
-      font-size: 1rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
     }
   }
 
   &__hours {
-    display: flex;
-    flex-direction: column;
+    @include desktop {
+      font-size: 1rem;
+    }
   }
 
   &__container {
@@ -148,20 +135,22 @@
   &__time {
     text-align: center;
     @include tablet {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
-  &__desktop-business {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  &__phone-container {
+    @include tablet {
+      display: flex;
+      gap: 0.5rem;
+
+    }
   }
 
   &__phone {
     text-decoration: underline;
     @include tablet {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
