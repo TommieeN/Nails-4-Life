@@ -14,10 +14,10 @@
     border-radius: 3%;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
     @include tablet {
-        width: 33%;
+        // width: 33%;
     }
     @include desktop {
-        width: 30%;
+        max-width: 25rem;
     }
   }
 

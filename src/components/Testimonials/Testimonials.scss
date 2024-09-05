@@ -33,6 +33,20 @@
     }
   }
 
+  &__card-container {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 40%;
+    }
+    @include desktop {
+
+    }
+  }
+
   &__button {
     @include button;
     max-width: 11rem;

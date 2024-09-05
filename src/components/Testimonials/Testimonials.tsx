@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ReviewCard from "../ReviewCard/ReviewCard";
 import "./Testimonials.scss";
+import { motion } from "framer-motion";
+
+// const api = import.meta.env.VITE_API_URL;
+const api = "http://localhost:3000/place-details";
 
 type ReviewType = {
   author: string;
@@ -11,8 +15,6 @@ type ReviewType = {
   time: string;
   google_listing: string;
 };
-
-const api = import.meta.env.VITE_API_URL;
 
 const testimonials: React.FC = () => {
   const [reviews, setReviews] = useState<ReviewType[]>([]);
@@ -32,18 +34,61 @@ const testimonials: React.FC = () => {
     getReviews();
   }, []);
 
+  const fadeInVariant = {
+    hidden: { opacity: 0, y: 50 }, 
+    visible: {
+      opacity: 1, 
+      y: 0, 
+      transition: {
+        duration: 0.5, 
+        ease: "easeInOut", 
+      },
+    },
+  };
+
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2, 
+      },
+    },
+  };
+
   return (
     <section className="testimonials">
-      <h2 className="testimonials__heading" id="Reviews">
+      <motion.h2
+        className="testimonials__heading"
+        id="Reviews"
+        variants={fadeInVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         Hear from Our Guests
-      </h2>
-      <div className="testimonials__container">
+      </motion.h2>
+      <motion.div
+        className="testimonials__container"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.1 }} 
+      >
         <div className="testimonials__reviews">
           {reviews.map((review: ReviewType, index) => (
-            <ReviewCard key={index} review={review} />
+            <motion.div
+              key={index}
+              variants={fadeInVariant} 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="testimonials__card-container"
+            >
+              <ReviewCard review={review} />
+            </motion.div>
           ))}
         </div>
-        {reviews && (
+        {reviews.length > 0 && (
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -53,7 +98,7 @@ const testimonials: React.FC = () => {
             MORE REVIEWS
           </a>
         )}
-      </div>
+      </motion.div>
       <h2 id="Gallery" className="testimonials__gallery">
         Gallery
       </h2>

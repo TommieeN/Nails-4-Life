@@ -1,7 +1,7 @@
 import "./Hero.scss";
 import hero from "../../assets/nail-assets/bg-hero.jpeg";
 import { motion } from "framer-motion";
-import { h1Variant, buttonVariant } from "../../animations/animations";
+import { headerVariant, buttonVariant } from "../../animations/animations";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={h1Variant}
+          variants={headerVariant}
         >
           <motion.h1 className="hero__header">
             <span className="hero__header--polish">Polish</span> Your Look,

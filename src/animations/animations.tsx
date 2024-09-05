@@ -35,7 +35,7 @@ export const buttonVariant = {
   },
 };
 
-export const h1Variant = {
+export const headerVariant = {
   hidden: { y: -150, opacity: 0 },
   visible: {
     y: 0,
