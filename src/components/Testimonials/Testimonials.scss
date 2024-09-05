@@ -4,14 +4,13 @@
 
 .testimonials {
   padding: 2rem;
-  
+
   &__heading {
     text-align: center;
     padding: 1rem;
     font-family: "PlayfairDisplay", sans-serif;
     @include desktop {
-      text-align: left;
-      padding: 0 5rem;
+      padding: 0 5rem 2rem 5rem;
     }
   }
 
@@ -45,6 +44,8 @@
       font-size: 1rem;
     }
     @include desktop {
+      font-size: 1.3rem;
+      max-width: 14rem;
       margin: 0.5rem;
     }
   }

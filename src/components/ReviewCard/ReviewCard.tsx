@@ -15,7 +15,7 @@ type ReviewCardProps = {
   };
 };
 
-const maxTextLength = 90;
+const maxTextLength = 85;
 
 const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
   const [isExpanded, setIsExpanded] = useState(false);

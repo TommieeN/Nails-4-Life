@@ -41,7 +41,6 @@ const Contact = () => {
             DIRECTIONS
           </a>
         </div>
-        <div>
           <div className="contact__tablet">
             <h4 className="contact__heading">Business Hours</h4>
             <div className="contact__hours">
@@ -53,17 +52,12 @@ const Contact = () => {
               ))}
             </div>
           </div>
-        </div>
         <div className="contact__desktop-container">
           <div className="contact__tablet contact__tablet--desktop">
             <h4 className="contact__heading">Phone</h4>
-            <p>
-              <BsTelephone /> Telephone:{" "}
+            <p className="contact__phone">
               <a href="tel: +16043723800">(604) 372-3800</a>
             </p>
-            <a className="contact__button" href="tel: +16043723800">
-              CALL NOW
-            </a>
           </div>
         </div>
         <div className="contact__socials-container">
@@ -75,14 +69,14 @@ const Contact = () => {
               target="_blank"
               href="https://www.tiktok.com/@nails4life_surrey"
             >
-              <FaTiktok size={25} />
+              <FaTiktok className="contact__tiktok-icon" />
             </a>
             <a
               className="contact__icon"
               target="_blank"
               href="https://www.instagram.com/nails4life_surrey/"
             >
-              <FaInstagram size={30} />
+              <FaInstagram className="contact__instagram-icon" />
             </a>
             <a
               className="contact__icon"
@@ -90,7 +84,7 @@ const Contact = () => {
               target="_blank"
               href="https://maps.app.goo.gl/DaZBcQNC2TaXm9to9"
             >
-              <FaGoogle size={25} />
+              <FaGoogle className="contact__google-icon" />
             </a>
           </div>
         </div>
