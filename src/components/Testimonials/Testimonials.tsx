@@ -3,6 +3,7 @@ import axios from "axios";
 import ReviewCard from "../ReviewCard/ReviewCard";
 import "./Testimonials.scss";
 import { motion } from "framer-motion";
+import { containerVariants, fadeInVariant } from "../../animations/animations";
 
 const api = import.meta.env.VITE_API_URL;
 
@@ -15,44 +16,22 @@ type ReviewType = {
   google_listing: string;
 };
 
-const testimonials: React.FC = () => {
+const Testimonials: React.FC = () => {
   const [reviews, setReviews] = useState<ReviewType[]>([]);
 
-  const getReviews = () => {
-    axios
-      .get(`${api}`)
-      .then((response) => {
-        setReviews(response.data);
-      })
-      .catch((error) => {
-        console.log("error", error);
-      });
+  const getReviews = async () => {
+    try {
+      const response = await axios.get(api);
+      setReviews(response.data);
+    } catch (error) {
+      console.error("Failed to fetch reviews:", error);
+    }
   };
 
   useEffect(() => {
     getReviews();
   }, []);
 
-  const fadeInVariant = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeInOut",
-      },
-    },
-  };
-
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
 
   return (
     <section className="testimonials">
@@ -74,7 +53,7 @@ const testimonials: React.FC = () => {
         viewport={{ once: false, amount: 0.1 }}
       >
         <div className="testimonials__reviews">
-          {reviews.map((review: ReviewType, index) => (
+          {reviews.map((review, index) => (
             <motion.div
               key={index}
               variants={fadeInVariant}
@@ -123,4 +102,4 @@ const testimonials: React.FC = () => {
   );
 };
 
-export default testimonials;
+export default Testimonials;

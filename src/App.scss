@@ -1,54 +1,54 @@
-@use './styles/partials/fonts' as *;
-@use './styles/partials/variables' as *;
-@use './styles/partials/mixins' as *;
+@use "./styles/partials/fonts" as *;
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/mixins" as *;
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    line-height: 1.5em;
-    text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 1.5em;
+  text-decoration: none;
 }
 
 body {
-    background: $secondary-color;
-    font-family: "PlayfairDisplay", sans-serif;
+  background: $secondary-color;
+  font-family: "PlayfairDisplay", sans-serif;
 }
 
 a {
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 h1 {
-    font-weight: 300;
-    font-size: 2rem;
-    color: $secondary-color;
-    @include tablet {
-        font-size: 3.5rem;
-    }
-    @include desktop {
-        font-size: 5rem;
-    }
+  font-weight: 300;
+  font-size: 2rem;
+  color: $secondary-color;
+  @include tablet {
+    font-size: 3.5rem;
+  }
+  @include desktop {
+    font-size: 5rem;
+  }
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    @include tablet {
-        font-size: 2.5rem;
-    }
-    @include desktop {
-        font-size: 3.5rem;
-    }
+  font-size: 2rem;
+  font-weight: 400;
+  @include tablet {
+    font-size: 2.5rem;
+  }
+  @include desktop {
+    font-size: 3.5rem;
+  }
 }
 
 p {
-    font-weight: 300;
-    font-size: 1rem;
-    color: $primary-color;
-    @include desktop {
-        font-size: 1.5rem;
-    }
+  font-weight: 300;
+  font-size: 1rem;
+  color: $primary-color;
+  @include desktop {
+    font-size: 1.5rem;
+  }
 }
