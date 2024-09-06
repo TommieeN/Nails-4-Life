@@ -14,14 +14,16 @@ const Footer = () => {
     >
       <motion.div className="contact" variants={fadeInVariant}>
         <div className="contact__info">
-          <motion.div className="contact__hours-container" variants={fadeInVariant}>
+          <motion.div
+            className="contact__hours-container"
+            variants={fadeInVariant}
+          >
             <h4 className="contact__heading">Hours:</h4>
             <p className="contact__hours">
               Monday-Friday 10AM-7:00PM, Saturday 10AM-6:00PM, Sunday 11AM-5PM
             </p>
           </motion.div>
         </div>
-
         <div className="contact__info">
           <motion.div className="contact__wrapper" variants={fadeInVariant}>
             <h4 className="contact__heading">Address:</h4>
@@ -36,16 +38,17 @@ const Footer = () => {
             </p>
           </motion.div>
         </div>
-
         <div className="contact__info">
-          <motion.div className="contact__phone-container" variants={fadeInVariant}>
+          <motion.div
+            className="contact__phone-container"
+            variants={fadeInVariant}
+          >
             <h4 className="contact__heading">Phone:</h4>
             <p className="contact__phone">
               <a href="tel: +16043723800">(604) 372-3800</a>
             </p>
           </motion.div>
         </div>
-
         <div className="contact__info">
           <motion.div className="contact__socials" variants={fadeInVariant}>
             <a
@@ -53,6 +56,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
               href="https://www.tiktok.com/@nails4life_surrey"
+              aria-label="Visit our tiktok"
             >
               <FaTiktok className="contact__tiktok-icon" />
             </a>
@@ -60,6 +64,7 @@ const Footer = () => {
               className="contact__icon"
               target="_blank"
               href="https://www.instagram.com/nails4life_surrey/"
+              aria-label="Visit our Instagram"
             >
               <FaInstagram className="contact__instagram-icon" />
             </a>
@@ -68,6 +73,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
               href="https://maps.app.goo.gl/DaZBcQNC2TaXm9to9"
+              aria-label="Visit our Google page!"
             >
               <FaGoogle className="contact__google-icon" />
             </a>
