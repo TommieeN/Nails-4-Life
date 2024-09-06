@@ -7,6 +7,7 @@
   @include tablet {
     text-align: center;
     margin: 0;
+    
   }
 }
 
@@ -25,20 +26,14 @@
   align-items: center;
   text-align: center;
   font-family: sans-serif;
-  
   @include tablet {
     font-size: 1.9rem;
     align-items: flex-start;
+    padding: 0 3rem;
   }
-  // @include desktop {
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-items: center;
-  //   justify-content: space-between;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  //   align-items: flex-start;
-  // }
+  @include desktop {
+    padding: 0 7rem;
+  }
   &__call {
     color: black;
   }
