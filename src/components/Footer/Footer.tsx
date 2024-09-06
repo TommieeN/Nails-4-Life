@@ -37,7 +37,7 @@ const Footer = () => {
           <motion.div className="contact__hours-container" variants={fadeInVariant}>
             <h4 className="contact__heading">Hours:</h4>
             <p className="contact__hours">
-              Monday - Friday 10AM-7:00PM, Saturday 10AM-6:00PM, Sunday 11AM-5PM
+              Monday-Friday 10AM-7:00PM, Saturday 10AM-6:00PM, Sunday 11AM-5PM
             </p>
           </motion.div>
         </div>

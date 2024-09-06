@@ -52,10 +52,6 @@
       flex-direction: column;
       align-items: center;
     }
-    // @include desktop {
-    //   padding-top: 1rem;
-    //   width: 45%;
-    // }
   }
 
   &__heading {
@@ -69,7 +65,11 @@
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
     gap: 0.25rem;
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &__address-text {
