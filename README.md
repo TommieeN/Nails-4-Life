@@ -1,6 +1,10 @@
-# Nails 4 Life - Website
+# Nails 4 Life - <a href="https://nails4lifesurrey.com/">Website</a>
 
 Welcome to the official website for Nails 4 Life, a real business based in Surrey, BC. This site provides essential information about the business, including operating hours, location, and contact details. It also showcases customer reviews and social media updates. The site is built using modern front-end technologies and integrates with Google APIs to pull dynamic data from the backend.
+
+![Screenshot 2024-09-04 at 11 06 03 PM](https://github.com/user-attachments/assets/a4c5e3ba-d11b-4606-a284-d57c153653ff)
+![Screenshot 2024-09-04 at 11 05 48 PM](https://github.com/user-attachments/assets/d000326a-4a45-463d-9069-eb4484e8cc6b)
+![Screenshot 2024-09-04 at 11 05 35 PM](https://github.com/user-attachments/assets/b364eee1-7a69-4649-9367-fd11a68f4f84)
 
 ## Key Features
 
