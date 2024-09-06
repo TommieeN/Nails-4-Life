@@ -12,7 +12,7 @@ Welcome to the official website for Nails 4 Life, a real business based in Surre
 - **Customer Reviews:** Integrated with Google Places API to pull and display real-time reviews from the business's Google listing.
 - **Instagram Gallery:** Showcases social media photos from Instagram using a widget to keep the gallery updated.
 - **Social Media Integration:** Links to the business’s Instagram, TikTok, and Google Maps profile.
-- **Responsive Design:** Optimized for both desktop and mobile views with flexible layouts.
+- **Responsive Design:** Optimized for both desktop, tablet and mobile views with flexible layouts.
 - **Smooth Animations:** Utilizes Framer Motion for scroll-triggered animations, including fade-in effects for the testimonials section and social icons.
 
 ## Tech Stack
@@ -20,7 +20,7 @@ Welcome to the official website for Nails 4 Life, a real business based in Surre
 - **Frontend:** React.js with TypeScript, SCSS for styling, and Framer Motion for animations.
 - **Backend:** Created and hosted using Node.js and Express. The <a href="https://github.com/TommieeN/google-api-business-reviews">backend</a> serves data to the frontend.
 - **API Integration:** The site uses Axios to make requests to Google’s Places API to fetch and display live reviews and business details.
-- **Responsive Design:** The layout adapts seamlessly to both desktop and mobile screens using CSS Grid, Flexbox, and media queries.
+- **Responsive Design:** The layout adapts seamlessly to both desktop, tablet and mobile screens using CSS Grid, Flexbox, and media queries.
 
 ## Installation and Setup
 
