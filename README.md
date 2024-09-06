@@ -18,7 +18,7 @@ Welcome to the official website for Nails 4 Life, a real business based in Surre
 ## Tech Stack
 
 - **Frontend:** React.js with TypeScript, SCSS for styling, and Framer Motion for animations.
-- **Backend:** Created and hosted using Node.js and Express. The backend serves data to the frontend.
+- **Backend:** Created and hosted using Node.js and Express. The <a href="https://github.com/TommieeN/google-api-business-reviews">backend</a> serves data to the frontend.
 - **API Integration:** The site uses Axios to make requests to Google’s Places API to fetch and display live reviews and business details.
 - **Responsive Design:** The layout adapts seamlessly to both desktop and mobile screens using CSS Grid, Flexbox, and media queries.
 
