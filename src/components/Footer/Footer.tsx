@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="contact__info">
           <motion.div className="contact__wrapper" variants={fadeInVariant}>
             <h4 className="contact__heading">Address:</h4>
-            <p className="contact__address-text">
+            <address className="contact__address-text">
               <a
                 rel="noopener noreferrer"
                 target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
               >
                 15325 56 Ave #104, Surrey, BC
               </a>
-            </p>
+            </address>
           </motion.div>
         </div>
         <div className="contact__info">
