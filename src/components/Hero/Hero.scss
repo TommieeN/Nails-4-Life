@@ -75,7 +75,7 @@
     border: 2px solid black;
     padding: 0.5rem;
     font-weight: 400;
-    @include button
+    @include button;
   }
 
   &__button {
@@ -96,7 +96,7 @@
       width: 100%;
       max-width: 20rem;
       text-align: center;
-      color: $primary-color; 
+      color: $primary-color;
       height: fit-content;
       &:hover {
         color: $secondary-color;
@@ -110,6 +110,5 @@
         max-width: 25rem;
       }
     }
-
   }
 }

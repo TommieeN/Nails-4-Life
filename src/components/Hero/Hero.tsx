@@ -3,7 +3,7 @@ import hero from "../../assets/nail-assets/bg-hero.jpeg";
 import { motion } from "framer-motion";
 import { headerVariant, buttonVariant } from "../../animations/animations";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className="hero" id="Home">
       <img
@@ -36,6 +36,7 @@ const Hero = () => {
             className="hero__button-primary"
             target="_blank"
             href="https://www.dashbooking.com/salon/nails-4-life"
+            rel="noopener noreferrer"
           >
             BOOK AN APPOINTMENT!
           </motion.a>
