@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+# Nails 4 Life - Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official website for Nails 4 Life, a real business based in Surrey, BC. This site provides essential information about the business, including operating hours, location, and contact details. It also showcases customer reviews and social media updates. The site is built using modern front-end technologies and integrates with Google APIs to pull dynamic data from the backend.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Business Information:** Displays essential business details such as hours, address, and phone number.
+- **Customer Reviews:** Integrated with Google Places API to pull and display real-time reviews from the business's Google listing.
+- **Instagram Gallery:** Showcases social media photos from Instagram using a widget to keep the gallery updated.
+- **Social Media Integration:** Links to the business’s Instagram, TikTok, and Google Maps profile.
+- **Responsive Design:** Optimized for both desktop and mobile views with flexible layouts.
+- **Smooth Animations:** Utilizes Framer Motion for scroll-triggered animations, including fade-in effects for the testimonials section and social icons.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend:** React.js with TypeScript, SCSS for styling, and Framer Motion for animations.
+- **Backend:** Created and hosted using Node.js and Express. The backend serves data to the frontend.
+- **API Integration:** The site uses Axios to make requests to Google’s Places API to fetch and display live reviews and business details.
+- **Responsive Design:** The layout adapts seamlessly to both desktop and mobile screens using CSS Grid, Flexbox, and media queries.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation and Setup
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/nails4life.git
+    cd nails4life
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Set up the environment variables: Create a `.env` file in the root directory and include your Google Places API key:
+    ```bash
+    VITE_API_URL=http://localhost:3000/place-details
+    ```
+
+4. Run the application:
+    ```bash
+    npm run dev
+    ```
+
+5. Open the application in your browser:
+    ```bash
+    http://localhost:3000
+    ```
+
+## Google API Integration
+
+The Google Places API is used to pull customer reviews and other business information dynamically. The API fetches data from the backend and automatically updates the reviews on the website to reflect the latest feedback from customers.
+
+## Business Purpose
+
+This website was specifically designed for Nails 4 Life, a nail salon in Surrey, BC. It is aimed at providing potential customers with up-to-date information, showcasing real-time reviews, and improving the salon’s online presence through integrated social media and easy navigation to their location.
