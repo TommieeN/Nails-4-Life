@@ -6,12 +6,15 @@ import { Link } from "react-scroll";
 import logo from "../../assets/logos/logo2.png";
 import "./NavBar.scss";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const [isDropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const navbarRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    // function to close navbar when clicked outside of the contents (mobile navbar)
+    /**
+     * Closes the mobile navbar when clicking outside of it.
+     * `navbarRef` references the nav container, so any clicks outside will trigger the close.
+     */
     const handleClickOutside = (event: MouseEvent) => {
       if (
         navbarRef.current &&
@@ -21,26 +24,29 @@ const NavBar = () => {
       }
     };
 
+    // Attach the event listener on component mount
     document.addEventListener("click", handleClickOutside);
 
+    // Cleanup event listener on component unmount
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
-  // Hamburger menu logic to drop menu
+  // Toggles the dropdown menu on hamburger icon click
   const handleHamburgerClick = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
-    event.stopPropagation();
+    event.stopPropagation(); // Prevents the event from bubbling to the document's click listener
     setDropdownOpen(!isDropdownOpen);
   };
 
+  // Close the dropdown when a link is clicked
   const handleLinkClick = () => {
     setDropdownOpen(false);
   };
 
-  // MotionFramer Properties
+  // Variants for framer-motion animations (to animate list items when dropdown opens)
   const itemVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
@@ -90,13 +96,15 @@ const NavBar = () => {
           )}
         </ul>
       </div>
+      
+      {/* Dropdown Menu for smaller screens */}
       <AnimatePresence>
         {isDropdownOpen && (
           <motion.ul
             className="navbar-list"
-            variants={{visible: { opacity: 1, y: 0 },}}
-            initial={{opacity: 0}}
-            animate="visible"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
           >
             {[
               "Home",
@@ -111,13 +119,13 @@ const NavBar = () => {
                 variants={itemVariants}
                 initial="hidden"
                 animate="visible"
-                transition={{ delay: index * 0.2 + 0.2 }}
+                transition={{ delay: index * 0.2 }}
               >
                 {item === "Booking" ? (
                   <a
+                    href="https://www.dashbooking.com/salon/nails-4-life"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.dashbooking.com/salon/nails-4-life"
                     onClick={handleLinkClick}
                   >
                     <p className="navbar-list__item">{item}</p>
