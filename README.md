@@ -18,34 +18,6 @@ Welcome to the official website for Nails 4 Life, a real business based in Surre
 - **API Integration:** The site uses Axios to make requests to Google’s Places API to fetch and display live reviews and business details.
 - **Responsive Design:** The layout adapts seamlessly to both desktop and mobile screens using CSS Grid, Flexbox, and media queries.
 
-## Installation and Setup
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/nails4life.git
-    cd nails4life
-    ```
-
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-
-3. Set up the environment variables: Create a `.env` file in the root directory and include your Google Places API key:
-    ```bash
-    VITE_API_URL=http://localhost:3000/place-details
-    ```
-
-4. Run the application:
-    ```bash
-    npm run dev
-    ```
-
-5. Open the application in your browser:
-    ```bash
-    http://localhost:3000
-    ```
-
 ## Google API Integration
 
 The Google Places API is used to pull customer reviews and other business information dynamically. The API fetches data from the backend and automatically updates the reviews on the website to reflect the latest feedback from customers.

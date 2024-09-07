@@ -37,7 +37,7 @@ const NavBar: React.FC = () => {
   const handleHamburgerClick = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
-    event.stopPropagation(); // Prevents the event from bubbling to the document's click listener
+    event.stopPropagation();
     setDropdownOpen(!isDropdownOpen);
   };
 
@@ -71,9 +71,10 @@ const NavBar: React.FC = () => {
               <li key={index}>
                 {item === "Booking" ? (
                   <a
-                    href="https://www.dashbooking.com/salon/nails-4-life"
+                    href="https://www.dashbooking.com/salon/nails-4-life/booking"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Book an appointment online"
                     onClick={handleLinkClick}
                   >
                     {item}
@@ -123,9 +124,10 @@ const NavBar: React.FC = () => {
               >
                 {item === "Booking" ? (
                   <a
-                    href="https://www.dashbooking.com/salon/nails-4-life"
+                    href="https://www.dashbooking.com/salon/nails-4-life/booking"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Book an appointment online"
                     onClick={handleLinkClick}
                   >
                     <p className="navbar-list__item">{item}</p>
