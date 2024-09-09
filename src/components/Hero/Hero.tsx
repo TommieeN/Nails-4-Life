@@ -35,7 +35,8 @@ const Hero: React.FC = () => {
           <motion.a
             className="hero__button-primary"
             target="_blank"
-            href="https://www.dashbooking.com/salon/nails-4-life"
+            href="https://www.dashbooking.com/salon/nails-4-life/booking"
+            aria-label="Book an appointment online"
             rel="noopener noreferrer"
           >
             BOOK AN APPOINTMENT!

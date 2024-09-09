@@ -43,11 +43,12 @@ const MainSection = () => {
             className="main__button"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.dashbooking.com/salon/nails-4-life"
+            href="https://www.dashbooking.com/salon/nails-4-life/booking"
             variants={buttonVariant}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            aria-label="Book an appointment online"
           >
             BOOK AN APPOINTMENT!
           </motion.a>

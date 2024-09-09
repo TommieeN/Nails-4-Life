@@ -32,6 +32,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://maps.app.goo.gl/yzNNXttg5CTqexHN8"
+                aria-label="Directions to salon address"
               >
                 15325 56 Ave #104, Surrey, BC
               </a>
@@ -45,7 +46,7 @@ const Footer = () => {
           >
             <h4 className="contact__heading">Phone:</h4>
             <p className="contact__phone">
-              <a href="tel: +16043723800">(604) 372-3800</a>
+              <a href="tel: +16043723800" aria-label="call salon number">(604) 372-3800</a>
             </p>
           </motion.div>
         </div>

@@ -88,6 +88,7 @@ const NavBar: React.FC = () => {
                     offset={-100}
                     duration={500}
                     onClick={handleLinkClick}
+                    aria-label={`navigate to ${item} section`}
                   >
                     {item}
                   </Link>

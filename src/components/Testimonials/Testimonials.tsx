@@ -72,6 +72,7 @@ const Testimonials: React.FC = () => {
             target="_blank"
             href="https://www.google.com/maps/place/?q=place_id:ChIJM2bsWtfPhVQRwL2W4qtTxJ8"
             className="testimonials__button"
+            aria-label="read more reviews"
           >
             MORE REVIEWS
           </a>

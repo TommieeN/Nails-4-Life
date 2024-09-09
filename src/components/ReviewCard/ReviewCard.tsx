@@ -59,6 +59,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
             rel="noopener noreferrer"
             target="_blank"
             href={review.google_listing}
+            aria-label="read more reviews"
           >
             <img
               className="testimonials__avatar"
@@ -70,6 +71,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
             rel="noopener noreferrer"
             target="_blank"
             href={review.google_listing}
+            aria-label="read more reviews"
           >
             <FcGoogle className="testimonials__google-logo" />
           </a>
@@ -80,6 +82,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
             rel="noopener noreferrer"
             target="_blank"
             href={review.google_listing}
+            aria-label="read more reviews"
           >
             <div className="testimonials__author-container">
               <p className="testimonials__author">{truncatedAuthor}</p>
