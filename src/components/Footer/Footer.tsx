@@ -18,7 +18,7 @@ const Footer = () => {
             className="contact__hours-container"
             variants={fadeInVariant}
           >
-            <h4 className="contact__heading">Hours:</h4>
+            <h3 className="contact__heading">Hours:</h3>
             <p className="contact__hours">
               Monday-Friday 10AM-7:00PM, Saturday 10AM-6:00PM, Sunday 11AM-5PM
             </p>
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="contact__info">
           <motion.div className="contact__wrapper" variants={fadeInVariant}>
-            <h4 className="contact__heading">Address:</h4>
+            <h3 className="contact__heading">Address:</h3>
             <address className="contact__address-text">
               <a
                 rel="noopener noreferrer"
@@ -44,9 +44,11 @@ const Footer = () => {
             className="contact__phone-container"
             variants={fadeInVariant}
           >
-            <h4 className="contact__heading">Phone:</h4>
+            <h3 className="contact__heading">Phone:</h3>
             <p className="contact__phone">
-              <a href="tel: +16043723800" aria-label="call salon number">(604) 372-3800</a>
+              <a href="tel: +16043723800" aria-label="call salon number">
+                (604) 372-3800
+              </a>
             </p>
           </motion.div>
         </div>
