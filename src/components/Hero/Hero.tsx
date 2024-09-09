@@ -10,6 +10,7 @@ const Hero: React.FC = () => {
         className="hero__banner"
         src={hero}
         alt="Picture of a cart filled with nail supplies"
+        loading="lazy"
       />
       <div className="hero__container">
         <motion.div
